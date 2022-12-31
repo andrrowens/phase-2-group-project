@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -31,6 +32,7 @@ body {
     list-style: none;
     display: flex;
     gap: 1rem;
+    font-size: 1.2rem;
 }
 
 .nav a {

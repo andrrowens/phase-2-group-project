@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
     <nav className="nav">
       <Link to="/" className="site-title">
-        Site Name
+        National Parks
         </Link>
       <ul>
         <CustomLink to="/explore">Explore</CustomLink>
