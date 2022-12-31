@@ -1,9 +1,10 @@
-import Homepage from "./components/Homepage.js"
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-
+    <div>
+      <h1>App</h1>
+      <Navbar />
     </div>
   );
 }
