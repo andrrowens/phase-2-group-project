@@ -41,7 +41,7 @@ useEffect(() => {
     });
   };
 
-  const filteredParks = parks.filter(park => park.name.toLowerCase().includes(searchPark.toLowerCase()) || park.description.toLowerCase().includes(searchPark.toLowerCase()));
+  const filteredParks = parks.filter(park => park.name.toLowerCase().includes(searchPark.toLowerCase()) || park.description.toLowerCase().includes(searchPark.toLowerCase()) || park.region.toLowerCase().includes(searchPark.toLowerCase()) || park.description.toLowerCase().includes(searchPark.toLowerCase()) || park.climate.toLowerCase().includes(searchPark.toLowerCase()));
 
   return (
       <><Navbar />

@@ -103,15 +103,16 @@ body {
 
 .poster {
     float: left;
-    object-fit: fill;
+    /* object-fit: cover; */
     height: 30em;
     width: 23em;
-    border: 3px solid rgb(255, 255, 255);
+    border: 2rem solid rgba(48, 52, 67, 0.326);
     padding: 2rem;
 }
 
 .description {
-    font-family: Optima, sans-serif
+    font-family: Optima, sans-serif;
+    font-size: 1.2em;
 }
 
 .scroll-container {
@@ -122,6 +123,7 @@ body {
   display: inline;
   flex-wrap: nowrap;
   display: flex;
+  padding: 20px;
 }
 
 .scrollableimages {
