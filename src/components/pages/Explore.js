@@ -1,7 +1,10 @@
-
-const Explore = () => {
+import Park from "./Park"
+const Explore = ({parks}) => {
+    const mappedParks = parks.map(park => <Park {...park} key={park.id}/>);
     return(
-        <h1>Explore</h1>
+       <div className="parks">
+        {mappedParks}
+       </div>
     )
 }
 
