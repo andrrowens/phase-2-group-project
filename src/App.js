@@ -3,11 +3,12 @@ import Home from './components/pages/Home';
 import Explore from './components/pages/Explore';
 import Reviews from './components/pages/Reviews';
 import Trivia from './components/pages/Trivia';
-import { Route, Routes } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { Route, Routes } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 function App() {
 const [parks, setParks] = useState([])
+const [scrollTop, setScrollTop] = useState(false);
 
 useEffect(() => {
   const fetchData = async () => {
@@ -21,7 +22,23 @@ useEffect(() => {
 }
 fetchData()
 }, []);
- 
+
+
+useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 1000) {
+        setScrollTop(true);
+      } else {
+        setScrollTop(false);
+      }
+    });
+  }, []);
+  const bottomToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
       <><Navbar />
@@ -32,6 +49,11 @@ fetchData()
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/trivia" element={<Trivia />} />
         </Routes>
+        {scrollTop && (
+        <button onClick={bottomToTop} className="backToTop">
+          &#8593;
+        </button>
+      )}
       </div>
       </>
   )

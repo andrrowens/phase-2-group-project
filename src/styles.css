@@ -52,6 +52,25 @@ body {
     background-color: #777;
 }
 
+.backToTop {
+    bottom: 25px;
+    right: 25px;
+    position: fixed;
+    font-size: 80px;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 55px;
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    -ms-border-radius: 55px;
+    -o-border-radius: 55px;
+    background: rgb(16, 12, 45);
+  }
+  .backToTop:hover {
+    background: #80cfe9;
+  }
+
 .parks-container {
     border-bottom: 5px solid #bbb;
     padding-bottom: 1rem;
