@@ -5,3 +5,4 @@ export default function Trivia() {
     <div>Trivia</div>
   )
 }
+
