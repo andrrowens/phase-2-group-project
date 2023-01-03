@@ -61,9 +61,13 @@ const Reviews = () => {
     //   <textarea onChange={handleChange} placeholder="Write your review here!" rows={10} name="content" value={newReview.content} />
     //   <input type="submit" value="Submit Review" />
     // </form>
-    <div className="reviews-container">
-    <ReviewsPage reviews={reviews}/>
-    </div>
+
+    <>
+      <h2 className="review-header"> Recent Visitor Reviews</h2>
+      <div className="reviews-container">
+        <ReviewsPage reviews={reviews}/>
+      </div>
+    </>
   );
 }
 

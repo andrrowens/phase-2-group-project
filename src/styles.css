@@ -279,3 +279,44 @@ input {
 }
 
 /* <<<<END SEARCH BAR CSS>>>> */
+
+.review-header {
+  background-color: rgba(146, 183, 132, 0.433);
+  padding: 0.5em;
+  font-size: 2.5em;
+  font-family: Optima, sans-serif
+}
+
+.review-box {
+  border-bottom: 5px solid #bbb;
+  border-radius: 10px;
+  padding: 2em;
+}
+
+.review-image {
+  float: right;
+  height: 15em;
+  width: 20em;
+  border: 0.5rem solid rgba(48, 52, 67, 0.326);
+}
+
+.review-title {
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.5em;
+  font-family: Optima, sans-serif
+}
+
+.review-content {
+  margin: 1em;
+  text-align: left; 
+  width: 40em;
+  font-family: Optima, sans-serif
+}
+
+.review-author {
+  margin: 1em;
+  text-align: left
+}
+
