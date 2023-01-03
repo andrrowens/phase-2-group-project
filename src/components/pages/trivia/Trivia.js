@@ -4,33 +4,40 @@ import Question from './Question'
 
 
 const Trivia = ({questions}) => {
-  console.log(questions)
- const [questionNumber, setQuestionNumber] = useState(1)
-//  const [clickedAnswer, setClickedAnswer] = useState(null)
-  // const [answer, setAnswer] = useState('')
-  // const [correct, setCorrect] = useState(false)
-  // const [incorrect, setIncorrect] = useState(false)
-  // const questionsArr = questions.map(question => 
-  //   <Question  key={question.id} question={question.questionText}/> )
-  // const charCompArr = characters.map(char => 
-  //   <Character {...char} key={char.id}/>)
-  // const mappedAnswers = questions?.answers.map((answer) => 
-  //   <Answers key={questions.id}{...answer}/>)
+ const [isRendered, setIsRendered] =  useState(false)
+ const [isStartRendered, setIsStartRendered] = useState(true)
+ 
+
+ const handleClick = (e) => {
+    setIsRendered(true)
+    setIsStartRendered(false)
+
+  
+ }
   
 
  
   return (
+
     <div>
+
+    {isStartRendered ? (
+    <div>
+      <h1>Welcome to Nat Trivia</h1>
       
-      <section><h1>Welcome to Nat Trivia</h1></section>
-      <button>Start</button>
-      <section>
-    <Question questions={questions} questionNumber={questionNumber} setQuestion={setQuestionNumber}/>
+        
+      <button onClick={handleClick}>Start</button> 
+      </div>) : null }
+      
+        {isRendered ? 
+          <section>
+    <Question questions={questions} />
     <div className="answers">{}</div>
         <button>🎵 🤫</button>
         <button>🔉 🔇</button>
+        </section> : null }
     
-      </section>
+      
     </div>
   )
 }

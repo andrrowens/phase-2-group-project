@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Answers = ({answers}) => {
+const Answers = ({answerOptions : {answerOptions}}) => {
+  console.log(answerOptions)
   // const [currentQuestion, setCurrentQuestion] = useState(0);
  
   // const handleClick = (e) => {
