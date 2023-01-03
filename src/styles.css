@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+.parks {
+
+}
+
 .container {
     margin: 1rem;
     text-align: center;  
@@ -74,12 +78,19 @@ body {
     text-align: center;
     color:rgb(0, 0, 0);
     font-family: 'DM Serif Display', serif;
+
 }
 
 .welcome {
     background-color: rgba(146, 183, 132, 0.433);
-    padding: 0.5em;
-    font-size: 2.5em;
+    padding: 2.5em;
+    font-size: 2em;
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png");
+}
+
+.discover {
+  background-color: rgba(145, 130, 214, 0.358);
+  font-size: 1.15em;
 }
 
 .header-1 {
