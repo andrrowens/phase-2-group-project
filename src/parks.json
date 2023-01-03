@@ -823,6 +823,7 @@
   "reviews": [
     {
       "id": "1",
+      "park": "Grand Canyon",
       "title": "Family Trip to Grand Canyon National Park",
       "image": "https://inspiredimperfection.com/wp-content/uploads/2018/05/things-to-do-grand-canyon-national-park.jpg",
       "content": "My family and I had a great time visiting Grand Canyon National Park last month. It was chilly but not too cold to get out and explore the park and we had a wonderful experience staying at the Kokopeli Lodge. We're already looking forward to planning our next trip back - but this time we'd love to visit in the spring or summer.",
@@ -830,6 +831,7 @@
     },
     {
       "id": "2",
+      "park": "Shenandoah",
       "title": "Great Time in Shenandoah NP!",
       "image": "https://www.nps.gov/shen/planyourvisit/images/Skyline-Drive-late-Fall.jpg?maxwidth=1200&maxheight=1200&autorotate=false",
       "content": "I absolutely loved my recent trip to Shenandoah National Park. The amenities were great and getting around the park was a breeze. My partner and I particularly enjoyed leaf peeping on Skyline Drive. We also saw lots of deer, some turkeys, and even a bear!",
@@ -837,6 +839,7 @@
     },
     {
       "id": "3",
+      "park": "Rocky Mountain",
       "title": "Snowy and Cold in RMNP",
       "image": "https://www.snowshoemag.com/wp-content/blogs.dir/5/files/DSCN9434-750x563.jpg",
       "content": "Rocky Mountain National Park was beautiful but very cold! It snowed everyday we were there and getting around the park in our rental car was dicey at times even though it had four-wheel drive. It'd love to visit again but will definitely plan my next trip during the warmer months.",
@@ -844,6 +847,7 @@
     },
     {
       "id": "4",
+      "park": "Dry Tortugas",
       "title": "Dry Tortugas - Unique but Tiny",
       "image": "https://npplan.com/wp-content/uploads/2016/01/Dry-Tortugas-46.jpg",
       "content": "A visit to Dry Tortugas National Park has been a bucket list item of mine for many years. It did not disappoint and I learned a ton about the history of Fort Jefferson and the marine life that lives in and around the park. However, there aren't as many recreational activities available compared to other national parks so this may not be the best choice for families with young children.",
@@ -851,6 +855,7 @@
     },
     {
       "id": "5",
+      "park": "Olympic",
       "title": "Olympic National Park is the best!",
       "image": "https://cdn.britannica.com/96/75396-050-5D1D411B/Mountain-goats-mountains-Olympic-National-Park-Washington.jpg",
       "content": "To be honest, I never considered myself to be a big fan of national parks until my visit to Olympic NP. But now I cannot wait to visit more. The scenery was unreal and we saw lots of wildlife. Way better than a zoo. Next time I'd love to spend a few nights campinging within the park. I would definitely recommend a trip to Olympic NP to any and all lovers of the great outdoors.",
