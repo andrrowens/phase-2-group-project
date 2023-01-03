@@ -49,7 +49,7 @@ const NewReview = ({setReviews}) => {
       { showForm ? ( 
       <form className="new-review-form" onSubmit={handleSubmit}>
         <label htmlFor="park"></label>
-        <select onChange={handleChange} name="park" id="selectList">
+        <select className="drop-down" onChange={handleChange} name="park" id="selectList">
         <option value="Park Not Selected">Select A Park</option>
         <option value="Denali">Denali</option>
         <option value="Gates of the Artic">Gates of the Artic</option>
@@ -116,17 +116,17 @@ const NewReview = ({setReviews}) => {
         <option value="Virgin Islands">Virgin Islands</option>
         </select> < br />
         <label htmlFor="title"></label>
-        <input onChange={handleChange} type="text" placeholder="Title" name="title" value={newReview.title} /> <br />
+        <input className="user-input" onChange={handleChange} type="text" placeholder="Title" name="title" value={newReview.title} /> <br />
         <label htmlFor="author"></label>
-        <input onChange={handleChange} type="text" placeholder="Author" name="author" value={newReview.author} /> <br />
+        <input className="user-input" onChange={handleChange} type="text" placeholder="Author" name="author" value={newReview.author} /> <br />
         <label htmlFor="image"></label>
-        <input onChange={handleChange} type="text" placeholder="Image" name="image" value={newReview.image} /> <br />
+        <input className="user-input" onChange={handleChange} type="text" placeholder="Image" name="image" value={newReview.image} /> <br />
         <label htmlFor="content"></label>
-        <textarea onChange={handleChange} type="text" placeholder="Write your review here!" rows={10} name="content" value={newReview.content} /> <br />
-        <button type="submit">Submit</button>
+        <textarea className="user-input" onChange={handleChange} type="text" placeholder="Write your review here!" rows={10} name="content" value={newReview.content} /> <br />
+        <button className="form-button" type="submit">Submit</button>
      </form>
   ) : null}
-     <button className="show-form" onClick={handleShowForm}>{ !showForm ? "Submit A Review!" : "Hide Review Form"}</button>
+     <button className="form-button" onClick={handleShowForm}>{ !showForm ? "Submit A Review!" : "Hide Review Form"}</button>
     </div>  
     )
 }
