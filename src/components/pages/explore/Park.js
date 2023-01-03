@@ -33,5 +33,9 @@ const Park = ({ name, region, image1, image2, image3, image4, image5, poster, de
     )
 }
 
+<<<<<<< .merge_file_QFveaU
 export default Park
 
+=======
+export default Park
+>>>>>>> .merge_file_Nvo6yY

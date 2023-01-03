@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_af6HVE
 import React from "react";
 import { useState, useEffect } from "react"
 import ReviewsPage from "./ReviewsPage"
@@ -39,3 +40,13 @@ const Reviews = ({parks}) => {
 
 export default Reviews;
 
+=======
+
+const Reviews = () => {
+    return(
+        <h1>Reviews</h1>
+    )
+}
+
+export default Reviews;
+>>>>>>> .merge_file_eG2MQM
