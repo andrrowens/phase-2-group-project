@@ -7,6 +7,7 @@ export default function ReviewsPage({reviews}) {
     // console.log(mappedReviews)
 
   return (
-    <div>{mappedReviews}</div>
+    <div>{mappedReviews}
+    </div>
   )
 }
