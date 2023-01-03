@@ -291,11 +291,12 @@ input {
 
 /* <<<<END SEARCH BAR CSS>>>> */
 
+
 .review-header {
   background-color: rgba(146, 183, 132, 0.433);
   padding: 0.5em;
   font-size: 2.5em;
-  font-family: Optima, sans-serif
+  font-family: Optima, sans-serif;
 }
 
 .review-box {
@@ -305,22 +306,24 @@ input {
 }
 
 .review-image {
-  float: right;
-  height: 15em;
-  width: 20em;
-  border: 0.5rem solid rgba(48, 52, 67, 0.326);
+  height: 30em;
+  width: 45em;
+  border: 1rem solid rgba(48, 52, 67, 0.326);
+  border-color: black;
 }
 
 .review-title {
   text-align: left;
-  font-size: 1.5em;
+  font-size: 3.5em;
   font-weight: bold;
   margin: 0.5em;
   font-family: Optima, sans-serif
 }
 
 .review-content {
+  float: left;
   margin: 1em;
+  font-size: 2em;
   text-align: left; 
   width: 40em;
   font-family: Optima, sans-serif
@@ -328,6 +331,7 @@ input {
 
 .review-author {
   margin: 1em;
-  text-align: left
+  text-align: left;
+  font-size: 2em;
 }
 

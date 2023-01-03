@@ -1,7 +1,9 @@
 import React from "react";
 import { useState } from "react"
 
-const NewReview = ({setReviews}) => {
+const NewReview = ({setReviews, parks}) => {
+
+    const [showForm, setShowForm] = useState(false);
 
     const [newReview, setNewReview] = useState({
       title: "",
@@ -36,9 +38,18 @@ const NewReview = ({setReviews}) => {
         })
     }
 
+    const handleShowForm = () => {
+      setShowForm(currentValue => !currentValue) 
+    }
+
     return (
     <div>
+      { showForm ? ( 
       <form className="new-review-form" onSubmit={handleSubmit}>
+        <select name="selectList" id="selectList">
+        <option value="option 1">Select A Park</option>
+        <option value="option 2">Option 2</option>
+        </select> < br />
         <label htmlFor="title"></label>
         <input onChange={handleChange} type="text" placeholder="Title" name="title" value={newReview.title} /> <br />
         <label htmlFor="author"></label>
@@ -49,6 +60,8 @@ const NewReview = ({setReviews}) => {
         <textarea onChange={handleChange} type="text" placeholder="Write your review here!" rows={10} name="content" value={newReview.content} /> <br />
         <button type="submit">Submit</button>
      </form>
+  ) : null}
+     <button className="show-form" onClick={handleShowForm}>{ !showForm ? "Submit A Review!" : "Hide Review Form"}</button>
     </div>  
     )
 }
