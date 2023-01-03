@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react"
 
-const NewReview = ({setReviews}) => {
+const ReviewForm = ({setReviews}) => {
 
     const [showForm, setShowForm] = useState(false);
 
@@ -131,4 +131,4 @@ const NewReview = ({setReviews}) => {
     )
 }
 
-export default NewReview;
+export default ReviewForm;
