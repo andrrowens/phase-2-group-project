@@ -1,23 +1,15 @@
+<<<<<<< .merge_file_af6HVE
 import React from "react";
 import { useState, useEffect } from "react"
 import ReviewsPage from "./ReviewsPage"
+import NewReview from "./NewReview"
 
-const Reviews = () => {
+const Reviews = ({parks}) => {
 
-    // const [newReview, setNewReview] = useState({
-    //   title: "",
-    //   content: "",
-    //   author: "",
-    // })
+   console.log(parks.name)
+
 
     const [reviews, setReviews] = useState([])
-
-    // const handleChange = e => {
-    //   setNewReview({...newReview, [e.target.name]: e.target.value})
-    // }
-
-    // const handleSubmit = e => {
-    //   e.preventDefault()
 
       useEffect(() => {
         const fetchData = async () => {
@@ -33,48 +25,28 @@ const Reviews = () => {
       fetchData()
       }, []);
 
-    //   fetch("http://localhost:3000/reviews", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json"
-    //     },
-    //     body: JSON.stringify(newReview)
-    //   })
-    //     .then(response => response.json())
-    //     .then(review => newReview(currentReviewList => [
-    //       review,
-    //       ...currentReviewList
-    //     ]))
-    //     .catch(error => alert(error))
-
-    //     newReview({
-    //       title: "",
-    //       content: "",
-    //       author: "",
-    //     })
-    // }
-
   return (
-    // <form className="new-review-form" onSubmit={handleSubmit}>
-    //   <input onChange={handleChange} placeholder="Title" name="title" value={newReview.title} />
-    //   <input onChange={handleChange} placeholder="Author" name="author" value={newReview.author} />
-    //   <textarea onChange={handleChange} placeholder="Write your review here!" rows={10} name="content" value={newReview.content} />
-    //   <input type="submit" value="Submit Review" />
-    // </form>
-    <div className="reviews-container">
-    <ReviewsPage reviews={reviews}/>
+    <div className="reviews-home"> 
+      <h2 className="review-header"> Recent Visitor Reviews</h2>
+      <div className="review-container">
+        <NewReview setReviews={setReviews} parks={parks} />
+      </div>
+      <div className="reviews-container">
+        <ReviewsPage reviews={reviews} setReviews={setReviews} />
+      </div>
     </div>
   );
 }
 
 export default Reviews;
 
+=======
 
-// import React from 'react'
+const Reviews = () => {
+    return(
+        <h1>Reviews</h1>
+    )
+}
 
-// const Reviews = () => {
-//   return (
-//     <div>Reviews</div>
-//   )
-// }
-// export default Reviews
+export default Reviews;
+>>>>>>> .merge_file_eG2MQM

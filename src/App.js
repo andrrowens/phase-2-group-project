@@ -49,7 +49,7 @@ useEffect(() => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore parks={filteredParks} key={parks.id} searchPark={searchPark} setSearchPark={setSearchPark}/>} />
-          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/reviews" element={<Reviews parks={parks} key={parks.id}/>} />
           <Route path="/trivia" element={<Trivia />} />
         </Routes>
         {scrollTop && (
