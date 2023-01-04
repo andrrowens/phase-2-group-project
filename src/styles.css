@@ -324,6 +324,10 @@ input {
   font-family: Optima, sans-serif;
   font-weight: bold;
   font-size: 2em;
+  padding: 12px 20px;
+  margin: 8px 0;
+  width: 50%;
+  box-sizing: border-box;
 }
 
 .park-select {
