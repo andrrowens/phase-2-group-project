@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import Question from "./Question";
 
@@ -14,9 +15,8 @@ const Trivia = ({ questions }) => {
     setIsStartRendered(false);
     // setPlaySound(true);
   };
- 
+    return(
 
-  return (
     <div className="welcome-trivia">
       {isStartRendered ? (
         <div className="trivia-start">
@@ -39,3 +39,4 @@ const Trivia = ({ questions }) => {
   );
 };
 export default Trivia;
+

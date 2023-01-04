@@ -1,282 +1,290 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .container {
-    margin: 1rem;
-    text-align: center;  
+  margin: 1rem;
+  text-align: center;  
 }
 
 .nav {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 2rem;
-    padding: 0 1rem;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .site-title {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
 }
 
 .nav a {
-    color: inherit;
-    text-decoration: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: .25rem;
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
 }
 
 .nav li.active {
-    background-color: #555;
+  background-color: #555;
 }
 .nav li:hover {
-    background-color: #777;
+  background-color: #777;
 }
 
 .backToTop {
-    bottom: 25px;
-    right: 25px;
-    position: fixed;
-    font-size: 80px;
-    color: #ffffff;
-    cursor: pointer;
-    border: none;
-    border-radius: 55px;
-    -webkit-border-radius: 55px;
-    -moz-border-radius: 55px;
-    -ms-border-radius: 55px;
-    -o-border-radius: 55px;
-    background: rgb(16, 12, 45);
-  }
-  .backToTop:hover {
-    background: #80cfe9;
-  }
+  bottom: 25px;
+  right: 25px;
+  position: fixed;
+  font-size: 80px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 55px;
+  -webkit-border-radius: 55px;
+  -moz-border-radius: 55px;
+  -ms-border-radius: 55px;
+  -o-border-radius: 55px;
+  background: rgb(16, 12, 45);
+}
+.backToTop:hover {
+  background: #80cfe9;
+}
 
 .explore-header {
-    text-align: center;
-    color:rgb(0, 0, 0);
-    font-family: 'DM Serif Display', serif;
+  text-align: center;
+  color:rgb(0, 0, 0);
+  font-family: 'DM Serif Display', serif;
+
 }
 
 .welcome {
-    background-color: rgba(146, 183, 132, 0.433);
-    padding: 0.5em;
-    font-size: 2.5em;
+  background-color: rgba(146, 183, 132, 0.433);
+  padding: 2.5em;
+  font-size: 2em;
+  background-image: url("https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png");
+}
+
+.discover {
+background-color: rgba(145, 130, 214, 0.358);
+font-size: 1.15em;
 }
 
 .header-1 {
-    font-size: 20px;
-    font-family: Optima, sans-serif
-   
+  font-size: 20px;
+  font-family: Optima, sans-serif
+ 
 }
 
 .parks-container {
-    border-bottom: 5px solid #bbb;
-    border-radius: 10px;
-    padding: 2em;
+  border-bottom: 5px solid #bbb;
+  border-radius: 10px;
+  padding: 2em;
 }
 
 .name {
-    background: linear-gradient(to bottom, #80cfe9 0%, rgb(146, 183, 132)100%);
-    color: rgb(255, 255, 255);
-    padding:.5rem;
-    font-size: 2.5rem;
+  background: linear-gradient(to bottom, #80cfe9 0%, rgb(146, 183, 132)100%);
+  color: rgb(255, 255, 255);
+  padding:.5rem;
+  font-size: 2.5rem;
 }
 
 .poster {
-    float: left;
-    /* object-fit: cover; */
-    height: 30em;
-    width: 23em;
-    border: 2rem solid rgba(48, 52, 67, 0.326);
-    padding: 2rem;
+  float: left;
+  /* object-fit: cover; */
+  height: 30em;
+  width: 23em;
+  border: 2rem solid rgba(48, 52, 67, 0.326);
+  padding: 2rem;
 }
 
 .description {
-    font-family: Optima, sans-serif;
-    font-size: 1.2em;
+  font-family: Optima, sans-serif;
+  font-size: 1.2em;
 }
 
 .scroll-container {
-  overflow: scroll;
-  color: white;
-  text-decoration: none;
-  flex-direction: row;
-  display: inline;
-  flex-wrap: nowrap;
-  display: flex;
-  padding: 20px;
+overflow: scroll;
+color: white;
+text-decoration: none;
+flex-direction: row;
+display: inline;
+flex-wrap: nowrap;
+display: flex;
+padding: 20px;
 }
 
 .scrollableimages {
-    display: inline-block;
-    object-fit: cover;
-    width: 25em;
-    height: 15em;
-    border: 3px solid rgb(255, 255, 255);
-    color: black;
+  display: inline-block;
+  object-fit: cover;
+  width: 25em;
+  height: 15em;
+  border: 3px solid rgb(255, 255, 255);
+  color: black;
 }
 
 /* <<<<START SEARCH BAR CSS>>>> */
 
 button, input {
-  font: 1em Hind, sans-serif;
-  line-height: 1.5em;
+font: 1em Hind, sans-serif;
+line-height: 1.5em;
 }
 input {
-  color: #171717;
+color: #171717;
 }
 .search-bar {
-  display: flex;
+display: flex;
 }
 .search-bar input,
 .search-btn, 
 .search-btn:before, 
 .search-btn:after {
-  transition: all 0.25s ease-out;
+transition: all 0.25s ease-out;
 }
 .search-bar input,
 .search-btn {
-  width: 3em;
-  height: 3em;
+width: 3em;
+height: 3em;
 }
 .search-bar input:invalid:not(:focus),
 .search-btn {
-  cursor: pointer;
+cursor: pointer;
 }
 .search-bar,
 .search-bar input:focus,
 .search-bar input:valid  {
-  width: 100%;
+width: 100%;
 }
 .search-bar input:focus,
 .search-bar input:not(:focus) + .search-btn:focus {
-  outline: transparent;
+outline: transparent;
 }
 .search-bar {
-  margin: auto;
-  padding: 1.5em;
-  justify-content: center;
-  max-width: 30em;
+margin: auto;
+padding: 1.5em;
+justify-content: center;
+max-width: 30em;
 }
 .search-bar input {
-  background: transparent;
-  border-radius: 1.5em;
-  box-shadow: 0 0 0 0.4em #171717 inset;
-  padding: 0.75em;
-  transform: translate(0.5em,0.5em) scale(0.5);
-  transform-origin: 100% 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+background: transparent;
+border-radius: 1.5em;
+box-shadow: 0 0 0 0.4em #171717 inset;
+padding: 0.75em;
+transform: translate(0.5em,0.5em) scale(0.5);
+transform-origin: 100% 0;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
 }
 .search-bar input::-webkit-search-decoration {
-  -webkit-appearance: none;
+-webkit-appearance: none;
 }
 .search-bar input:focus,
 .search-bar input:valid {
-  background: #fff;
-  border-radius: 0.375em 0 0 0.375em;
-  box-shadow: 0 0 0 0.1em #d9d9d9 inset;
-  transform: scale(1);
+background: #fff;
+border-radius: 0.375em 0 0 0.375em;
+box-shadow: 0 0 0 0.1em #d9d9d9 inset;
+transform: scale(1);
 }
 .search-btn {
-  background: #171717;
-  border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
-  padding: 0.75em;
-  position: relative;
-  transform: translate(0.25em,0.25em) rotate(45deg) scale(0.25,0.125);
-  transform-origin: 0 50%;
+background: #171717;
+border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
+padding: 0.75em;
+position: relative;
+transform: translate(0.25em,0.25em) rotate(45deg) scale(0.25,0.125);
+transform-origin: 0 50%;
 }
 .search-btn:before, 
 .search-btn:after {
-  content: "";
-  display: block;
-  opacity: 0;
-  position: absolute;
+content: "";
+display: block;
+opacity: 0;
+position: absolute;
 }
 .search-btn:before {
-  border-radius: 50%;
-  box-shadow: 0 0 0 0.2em #f1f1f1 inset;
-  top: 0.75em;
-  left: 0.75em;
-  width: 1.2em;
-  height: 1.2em;
+border-radius: 50%;
+box-shadow: 0 0 0 0.2em #f1f1f1 inset;
+top: 0.75em;
+left: 0.75em;
+width: 1.2em;
+height: 1.2em;
 }
 .search-btn:after {
-  background: #f1f1f1;
-  border-radius: 0 0.25em 0.25em 0;
-  top: 51%;
-  left: 51%;
-  width: 0.75em;
-  height: 0.25em;
-  transform: translate(0.2em,0) rotate(45deg);
-  transform-origin: 0 50%;
+background: #f1f1f1;
+border-radius: 0 0.25em 0.25em 0;
+top: 51%;
+left: 51%;
+width: 0.75em;
+height: 0.25em;
+transform: translate(0.2em,0) rotate(45deg);
+transform-origin: 0 50%;
 }
 .search-btn span {
-  display: inline-block;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
+display: inline-block;
+overflow: hidden;
+width: 1px;
+height: 1px;
 }
 
 /* Active state */
 .search-bar input:focus + .search-btn,
 .search-bar input:valid + .search-btn {
-  background: hsl(224, 21%, 55%);
-  border-radius: 0 0.375em 0.375em 0;
-  transform: scale(1);
+background: hsl(224, 21%, 55%);
+border-radius: 0 0.375em 0.375em 0;
+transform: scale(1);
 }
 .search-bar input:focus + .search-btn:before, 
 .search-bar input:focus + .search-btn:after,
 .search-bar input:valid + .search-btn:before, 
 .search-bar input:valid + .search-btn:after {
-  opacity: 1;
+opacity: 1;
 }
 .search-bar input:focus + .search-btn:hover,
 .search-bar input:valid + .search-btn:hover,
 .search-bar input:valid:not(:focus) + .search-btn:focus {
-  background: #1d2844;
+background: #1d2844;
 }
 .search-bar input:focus + .search-btn:active,
 .search-bar input:valid + .search-btn:active {
-  transform: translateY(1px);
+transform: translateY(1px);
 }
 
 @media screen and (prefers-color-scheme: dark) {
-  input {
-    color: #f1f1f1;
-  }
-  .search-bar input {
-    box-shadow: 0 0 0 0.4em #f1f1f1 inset;
-  }
-  .search-bar input:focus,
-  .search-bar input:valid {
-    background: #3d3d3d;
-    box-shadow: 0 0 0 0.1em #3d3d3d inset;
-  }
-  .search-btn {
-    background: #f1f1f1;
-  }
+input {
+  color: #f1f1f1;
 }
+.search-bar input {
+  box-shadow: 0 0 0 0.4em #f1f1f1 inset;
+}
+.search-bar input:focus,
+.search-bar input:valid {
+  background: #3d3d3d;
+  box-shadow: 0 0 0 0.1em #3d3d3d inset;
+}
+.search-btn {
+  background: #f1f1f1;
+}
+}
+
 
 /* <<<<END SEARCH BAR CSS>>>> */
 
@@ -371,43 +379,98 @@ button:hover::after, button:focus::after {
 
 
 
-/* .trivia-start {
-  background-color: url("https://www.responsiblevacation.com/ImagesClient/dtg-cr3811-alaska-summer-moose-lake.jpg");
 
+
+
+
+
+
+/* <<<<END SEARCH BAR CSS>>>> */
+
+
+.review-header {
+background-color: rgba(146, 183, 132, 0.433);
+padding: 0.5em;
+font-size: 3.5em;
+font-family: Optima, sans-serif;
 }
 
-.start-btn {
-  --b: 3px;   /* border thickness */
-  --s: .45em; /* size of the corner */
-  --color: #373B44;
-  
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-  color: var(--color);
-  --_p: var(--s);
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
-  outline: var(--b) solid #0000;
-  outline-offset: .6em;
-  font-size: 16px;
-
-  border: 0;
-
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+.review-box {
+border-bottom: 5px solid #bbb;
+border-radius: 10px;
+padding: 2em;
 }
 
-.start-btn:hover,
-.start-btn:focus-visible{
-  --_p: 0px;
-  outline-color: var(--color);
-  outline-offset: .05em;
+.review-image {
+height: 30em;
+width: 45em;
+border: 1rem solid rgba(48, 52, 67, 0.326);
+border-color: black;
 }
 
-.start-btn:active {
-  background: var(--color);
-  color: #fff;
-} */
-/**/
+.drop-down {
+font-size: 2em;
+font-weight: bold;
+font-family: Optima, sans-serif;
+text-align: center
+}
+
+.user-input {
+color: black;
+font-family: Optima, sans-serif;
+font-weight: bold;
+font-size: 2em;
+padding: 12px 20px;
+margin: 8px 0;
+width: 50%;
+box-sizing: border-box;
+}
+
+.park-select {
+text-align: center;
+font-size: 3.0em;
+font-weight: bold;
+color: darkslategray;
+margin: 0.5em;
+font-family: Optima, sans-serif;
+text-decoration: underline;
+padding: 1em
+}
+
+.review-title {
+text-align: left;
+font-size: 3.5em;
+font-weight: bold;
+margin: 0.5em;
+font-family: Optima, sans-serif
+}
+
+.review-content {
+float: left;
+margin: 1em;
+font-size: 2em;
+text-align: left; 
+width: 40em;
+font-family: Optima, sans-serif
+}
+
+.review-author {
+margin: 1em;
+text-align: left;
+font-size: 2em;
+font-style:italic
+}
+
+.form-button {
+margin: 0.5em;
+text-align: center;
+font-size: 2em;
+font-weight: bold;
+}
+
+.new-review-form {
+width: 100%;
+color: black;
+}
+/* <<<<END SEARCH BAR CSS>>>> */
+
