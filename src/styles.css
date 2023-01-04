@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+.parks {
+
+}
+
 .container {
     margin: 1rem;
     text-align: center;  
@@ -74,12 +78,19 @@ body {
     text-align: center;
     color:rgb(0, 0, 0);
     font-family: 'DM Serif Display', serif;
+
 }
 
 .welcome {
     background-color: rgba(146, 183, 132, 0.433);
-    padding: 0.5em;
-    font-size: 2.5em;
+    padding: 2.5em;
+    font-size: 2em;
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png");
+}
+
+.discover {
+  background-color: rgba(145, 130, 214, 0.358);
+  font-size: 1.15em;
 }
 
 .header-1 {
@@ -279,3 +290,86 @@ input {
 }
 
 /* <<<<END SEARCH BAR CSS>>>> */
+
+
+.review-header {
+  background-color: rgba(146, 183, 132, 0.433);
+  padding: 0.5em;
+  font-size: 3.5em;
+  font-family: Optima, sans-serif;
+}
+
+.review-box {
+  border-bottom: 5px solid #bbb;
+  border-radius: 10px;
+  padding: 2em;
+}
+
+.review-image {
+  height: 30em;
+  width: 45em;
+  border: 1rem solid rgba(48, 52, 67, 0.326);
+  border-color: black;
+}
+
+.drop-down {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: Optima, sans-serif;
+  text-align: center
+}
+
+.user-input {
+  color: black;
+  font-family: Optima, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.park-select {
+  text-align: center;
+  font-size: 3.0em;
+  font-weight: bold;
+  color: darkslategray;
+  margin: 0.5em;
+  font-family: Optima, sans-serif;
+  text-decoration: underline;
+  padding: 1em
+}
+
+.review-title {
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 0.5em;
+  font-family: Optima, sans-serif
+}
+
+.review-content {
+  float: left;
+  margin: 1em;
+  font-size: 2em;
+  text-align: left; 
+  width: 40em;
+  font-family: Optima, sans-serif
+}
+
+.review-author {
+  margin: 1em;
+  text-align: left;
+  font-size: 2em;
+  font-style:italic
+}
+
+.form-button {
+  margin: 0.5em;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.new-review-form {
+  width: 100%;
+  color: black;
+}
+
