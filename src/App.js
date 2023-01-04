@@ -56,6 +56,7 @@ useEffect(() => {
           <Route path="/explore" element={<Explore parks={filteredParks} key={parks.id} searchPark={searchPark} setSearchPark={setSearchPark}/>} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/trivia" element={<Trivia  questions={questions}/>} />
+
         </Routes>
         {scrollTop && (
         <button onClick={bottomToTop} className="backToTop">
