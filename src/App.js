@@ -55,7 +55,8 @@ useEffect(() => {
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore parks={filteredParks} key={parks.id} searchPark={searchPark} setSearchPark={setSearchPark}/>} />
           <Route path="/reviews" element={<Reviews />} />
-          <Route path="/trivia" element={<Trivia  questions={questions}/>} />
+
+          <Route path="/trivia" element={<Trivia className="trivia-container" questions={questions}/>} />
 
         </Routes>
         {scrollTop && (

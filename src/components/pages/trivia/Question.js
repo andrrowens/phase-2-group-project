@@ -6,12 +6,12 @@ const Question = ({ questions }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [points, setPoints] = useState(0);
   let [wrongAnswer, setWrongAnswer] = useState(0);
-  const [hearts, setHearts] = useState(["❤️", "❤️", "❤️"]);
+  const [hearts, setHearts] = useState(["❤", "❤", "❤"]);
   const [totalPoints, setTotalPoints] = useState(true)
 
   const showQuestions = questions[currentQuestion].questionText;
 
-  const listOfHearts = hearts.map((heart) => <span>{heart}</span>);
+  const listOfHearts = hearts.map((heart) => <span className="">{heart}</span>);
 
   const handleAnswerClick = (isCorrect) => {
     if (isCorrect) {
@@ -20,9 +20,9 @@ const Question = ({ questions }) => {
       setWrongAnswer(wrongAnswer + 1);
 
       if (wrongAnswer === 0) {
-        setHearts(["❤️", "❤️"]);
+        setHearts(["❤", "❤"]);
       } else if (wrongAnswer === 1) {
-        setHearts(["❤️"]);
+        setHearts(["❤"]);
       } else {
         setHearts([])
         setTotalPoints(false)
@@ -52,17 +52,21 @@ const Question = ({ questions }) => {
   return (
     <div>
     {totalPoints ? (
-    <div className="questions">
+    <div className="question-container">
         
-        <button>🌙 ☀️</button>
-        <h2>Points: {points}</h2>
-        <h3>
+        
+        <h1>Points: {points}</h1>
+        <h2>
           Question {currentQuestion} / {questions.length}
-        </h3>
+        </h2>
         <h3>Life's left : {listOfHearts}</h3>
-     
-      <p>{showQuestions}</p>
-      <section className="answerbtns">{mappedAnswers}</section>
+        
+      <div className="entire-quiz">
+        <p className="questions">{showQuestions}
+        </p>
+          <span className="answer-span">      {mappedAnswers}
+          </span>
+        </div>
       </div>) : (
       <div className="game-over">
       <h1>Game Over</h1>

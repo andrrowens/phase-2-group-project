@@ -331,85 +331,138 @@ input {
 /*<<< TRIVIA APP >>> */
 /*<<< WELCOME & START BUTTON>>> */
 
-/* .wrap {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+.triv-container {
+  min-height: 100%;
+  background-image: url('https://i.pinimg.com/originals/6c/0d/f0/6c0df0b7e26c40e1a1de85e51106f940.jpg');
+  background-size: cover;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  color:black;
+  text-transform: uppercase;
+}
+
+.wrap{
+  padding: 1.5rem;
+}
+
 
 .start-btn {
-  min-width: 300px;
-  min-height: 60px;
-  font-family: 'Nunito', sans-serif;
-  font-size: 22px;
+  --b: 3px;   /* border thickness */
+  --s: .65em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .5s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 25px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.start-btn:hover,
+.start-btn:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.start-btn:active {
+  background: var(--color);
+  color: #fff;
+}
+
+.quest-container{
+  min-height: 100%;
+  background-image: url('https://i.pinimg.com/originals/6c/0d/f0/6c0df0b7e26c40e1a1de85e51106f940.jpg');
+  background-size: cover;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color:black;
   text-transform: uppercase;
-  letter-spacing: 1.3px;
-  font-weight: 700;
-  color: #313133;
-  background: #4FD1C5;
-background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
-  border: none;
-  border-radius: 1000px;
-  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
-  transition: all 0.3s ease-in-out 0s;
-  cursor: pointer;
-  outline: none;
-  position: relative;
+
+}
+
+
+
+/* CSS */
+.entire-quiz{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10;
+  margin-right: 10%;
+  margin-left: 10%;
+  width: 60%;
+  height: 60%;
+  
+  box-shadow: rgb(3, 3, 4) 0px 25px 40px -5px;
+  
+  ;
+  border-width: 2px;
+  border-radius: 30px;
+}
+.questions{
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.answer-span {
   padding: 10px;
+  text-align: center;
+
+}
+.answer-btn{
+  position: center;
+  padding: 15px;
+  text-align: center;
+  font-size: 90%;
+  
+  color: black;
+  width:20%;
+  background-color: transparent;
+  border-width: 2px;
+  cursor: pointer;
+  opacity: 2;
+  border-radius: .5rem;
   }
-
-start-btn::before {
-content: '';
-  border-radius: 1000px;
-  min-width: calc(300px + 12px);
-  min-height: calc(60px + 12px);
-  border: 6px solid #00FFCB;
-  box-shadow: 0 0 60px rgba(0,255,203,.64);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: all .3s ease-in-out 0s;
-}
-
-.start-btn:hover, .start-btn:focus {
-  color: #313133;
-  transform: translateY(-6px);
-}
-
-start-btn:hover::before, :focus::before {
-  opacity: 1;
-}
-
-
-start-btn::after {
-  content: '';
-  width: 30px; height: 30px;
-  border-radius: 100%;
-  border: 6px solid #00FFCB;
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: none;
-  display: none;
-}
-
-@keyframes ring {
-  0% {
-    width: 30px;
-    height: 30px;
-    opacity: 1;
+  .answer-btn {
+    
+    border-color: opaque transparent;
+    padding: 0.5;
+    cursor: pointer;
+    /* font-size: 80%; */
+    color: black;
+    background-image: linear-gradient(45deg, transparent 50%, black 50%);
+    background-position: 20%;
+    background-size: 600%;
+    -webkit-transition: background 500ms ease-in-out, color 500ms ease-in-out;
+    transition: background 500ms ease-in-out, color 500ms ease-in-out;
+    table-layout: fixed;
   }
-  100% {
-    width: 300px;
-    height: 300px;
-    opacity: 0;
+  
+  .answer-btn:hover {
+    color: #ffffff;
+    background-position: 100%;
   }
-}
+  
+
+
+
 
 
 

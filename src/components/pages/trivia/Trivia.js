@@ -16,23 +16,26 @@ const Trivia = ({ questions }) => {
   };
     return(
 
-    <div className="welcome-trivia">
+    <div>
       {isStartRendered ? (
-        <div className="trivia-start">
-          <h1 className="trivia-welcome">Welcome to Nat Trivia</h1>
+        
+        <div  className="triv-container">
+          <h1 className="triv-title">Welcome to National Park Trivia</h1>
           <div className="wrap">
-            <button className="start-btn" onClick={handleClick}>Start</button>
+            <button className="start-btn" onClick={handleClick}>Start Quiz</button>
           </div>
         </div>
       ) : null}
 
       {isRendered ? (
+        <div className="quest-container">
         <section>
           <Question questions={questions} />
           
-          <button>🎵 </button>
-          <button onClick={handleClick}>🔉 </button>
+          {/* <button>🎵 </button>
+          <button onClick={handleClick}>🔉 </button> */}
         </section>
+        </div>
       ) : null}
     </div>
   );
