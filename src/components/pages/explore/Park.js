@@ -1,3 +1,4 @@
+import React from 'react';
 import { FaTemperatureLow, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Park = ({ name, region, image1, image2, image3, image4, image5, poster, description, climate}) => {

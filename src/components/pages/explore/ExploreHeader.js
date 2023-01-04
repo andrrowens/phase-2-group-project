@@ -1,6 +1,5 @@
 
-
-import {useState} from 'react'
+import React, {useState} from 'react'
 
 const ExploreHeader = ({searchPark, setSearchPark}) => {
     const [input, setInput] = useState("")
