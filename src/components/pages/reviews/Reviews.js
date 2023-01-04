@@ -2,7 +2,7 @@
 import React from "react";
 import { useState, useEffect } from "react"
 import ReviewsPage from "./ReviewsPage"
-import NewReview from "./NewReview"
+import ReviewForm from "./ReviewForm"
 
 const Reviews = ({parks}) => {
 
@@ -29,7 +29,7 @@ const Reviews = ({parks}) => {
     <div className="reviews-home"> 
       <h2 className="review-header"> Recent Visitor Reviews</h2>
       <div className="review-container">
-        <NewReview setReviews={setReviews} parks={parks} />
+        <ReviewForm setReviews={setReviews} parks={parks} />
       </div>
       <div className="reviews-container">
         <ReviewsPage reviews={reviews} setReviews={setReviews} />
