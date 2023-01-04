@@ -7,7 +7,6 @@ body {
 }
 
 .container {
-  margin: 1rem;
   text-align: center;  
 }
 
@@ -68,6 +67,44 @@ body {
 }
 .backToTop:hover {
   background: #80cfe9;
+}
+
+.home-container {
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+.home-top-div{
+  background-image: url("https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg");
+  background-color: red;
+  width: 100%;
+  min-height: 80vh;
+  max-height: 80vh;
+  position: absolute;
+  top: 10;
+  left: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-title{
+background-color: rgba(255, 255, 255, 0.507);
+white-space: normal;
+color: rgb(255, 255, 255);
+font-size: 5em;
+font-family: 'DM Serif Display', serif;
+justify-content: space-around center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: .5em;
+}
+.home-subtitle{
 }
 
 .explore-header {
@@ -284,6 +321,155 @@ input {
   background: #f1f1f1;
 }
 }
+
+
+/* <<<<END SEARCH BAR CSS>>>> */
+
+/*<<< TRIVIA APP >>> */
+/*<<< WELCOME & START BUTTON>>> */
+
+.triv-container {
+  min-height: 100%;
+  background-image: url('https://i.pinimg.com/originals/6c/0d/f0/6c0df0b7e26c40e1a1de85e51106f940.jpg');
+  background-size: cover;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  color:black;
+  text-transform: uppercase;
+}
+
+.wrap{
+  padding: 1.5rem;
+}
+
+
+.start-btn {
+  --b: 3px;   /* border thickness */
+  --s: .65em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .5s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 25px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.start-btn:hover,
+.start-btn:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.start-btn:active {
+  background: var(--color);
+  color: #fff;
+}
+
+.quest-container{
+  min-height: 100%;
+  background-image: url('https://i.pinimg.com/originals/6c/0d/f0/6c0df0b7e26c40e1a1de85e51106f940.jpg');
+  background-size: cover;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color:black;
+  text-transform: uppercase;
+
+}
+
+
+
+/* CSS */
+.entire-quiz{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10;
+  margin-right: 10%;
+  margin-left: 10%;
+  width: 60%;
+  height: 60%;
+  
+  box-shadow: rgb(3, 3, 4) 0px 25px 40px -5px;
+  
+  ;
+  border-width: 2px;
+  border-radius: 30px;
+}
+.questions{
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.answer-span {
+  padding: 10px;
+  text-align: center;
+
+}
+.answer-btn{
+  position: center;
+  padding: 15px;
+  text-align: center;
+  font-size: 90%;
+  
+  color: black;
+  width:20%;
+  background-color: transparent;
+  border-width: 2px;
+  cursor: pointer;
+  opacity: 2;
+  border-radius: .5rem;
+  }
+  .answer-btn {
+    
+    border-color: opaque transparent;
+    padding: 0.5;
+    cursor: pointer;
+    /* font-size: 80%; */
+    color: black;
+    background-image: linear-gradient(45deg, transparent 50%, black 50%);
+    background-position: 20%;
+    background-size: 600%;
+    -webkit-transition: background 500ms ease-in-out, color 500ms ease-in-out;
+    transition: background 500ms ease-in-out, color 500ms ease-in-out;
+    table-layout: fixed;
+  }
+  
+  .answer-btn:hover {
+    color: #ffffff;
+    background-position: 100%;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* <<<<END SEARCH BAR CSS>>>> */
