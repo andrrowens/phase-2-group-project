@@ -6,9 +6,6 @@ import ReviewForm from "./ReviewForm"
 
 const Reviews = ({parks}) => {
 
-   console.log(parks.name)
-
-
     const [reviews, setReviews] = useState([])
 
       useEffect(() => {
@@ -26,6 +23,7 @@ const Reviews = ({parks}) => {
       }, []);
 
   return (
+
     <div className="reviews-home"> 
       <h2 className="review-header"> Recent Visitor Reviews</h2>
       <div className="review-container">
@@ -39,5 +37,3 @@ const Reviews = ({parks}) => {
 }
 
 export default Reviews;
-
-

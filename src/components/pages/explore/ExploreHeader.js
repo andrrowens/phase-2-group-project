@@ -1,4 +1,5 @@
 
+
 import {useState} from 'react'
 
 const ExploreHeader = ({searchPark, setSearchPark}) => {
@@ -28,7 +29,6 @@ const ExploreHeader = ({searchPark, setSearchPark}) => {
     <p className="header-1">
         Scroll down ⇩ to explore some of the amazing features of the United States National Parks, or visit <a href="https://www.nationalparks.org/explore/parks" target="_blank" rel="noopener noreferrer">nationalparks.org</a> for more information and to learn about how you can contribute.
     </p>
-    
     <form  onSubmit={handleSubmit} className="search-bar">
     <input
         onChange={(e) => setInput(e.target.value)}
