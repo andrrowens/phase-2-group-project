@@ -1,8 +1,8 @@
-<<<<<<< .merge_file_af6HVE
+
 import React from "react";
 import { useState, useEffect } from "react"
 import ReviewsPage from "./ReviewsPage"
-import NewReview from "./NewReview"
+import ReviewForm from "./ReviewForm"
 
 const Reviews = ({parks}) => {
 
@@ -29,7 +29,7 @@ const Reviews = ({parks}) => {
     <div className="reviews-home"> 
       <h2 className="review-header"> Recent Visitor Reviews</h2>
       <div className="review-container">
-        <NewReview setReviews={setReviews} parks={parks} />
+        <ReviewForm setReviews={setReviews} parks={parks} />
       </div>
       <div className="reviews-container">
         <ReviewsPage reviews={reviews} setReviews={setReviews} />
@@ -40,13 +40,4 @@ const Reviews = ({parks}) => {
 
 export default Reviews;
 
-=======
 
-const Reviews = () => {
-    return(
-        <h1>Reviews</h1>
-    )
-}
-
-export default Reviews;
->>>>>>> .merge_file_eG2MQM
