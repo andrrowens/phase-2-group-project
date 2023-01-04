@@ -1,12 +1,12 @@
-
+import React from'react';
 
 export default function Home() {
   return (
     <div className="home-container">
-      <div className="home-title-image">
+    <div className="home-top-div">
         <span className="home-title">Welcome</span>
-          <p className="home-subtitle">Bla bla bla</p>
-      </div>
+    </div>
+    <div className="home-bottom-div">Hello</div>
     </div>
   )
 }
