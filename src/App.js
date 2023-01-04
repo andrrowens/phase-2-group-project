@@ -5,6 +5,7 @@ import Reviews from './components/pages/reviews/Reviews';
 import Trivia from './components/pages/trivia/Trivia';
 import { Route, Routes } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import questions from './questions'
 
 function App() {
 const [parks, setParks] = useState([])
@@ -50,7 +51,7 @@ useEffect(() => {
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore parks={filteredParks} key={parks.id} searchPark={searchPark} setSearchPark={setSearchPark}/>} />
           <Route path="/reviews" element={<Reviews />} />
-          <Route path="/trivia" element={<Trivia />} />
+          <Route path="/trivia" element={<Trivia questions={questions}/>} />
         </Routes>
         {scrollTop && (
         <button onClick={bottomToTop} className="backToTop">
