@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 import Answers from "./Answers";
 
 const Question = ({ questions }) => {
@@ -79,4 +78,5 @@ const Question = ({ questions }) => {
     </div>
   );
 };
+
 export default Question;

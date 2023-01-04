@@ -46,4 +46,3 @@ const ExploreHeader = ({searchPark, setSearchPark}) => {
 )
 }
 export default ExploreHeader;
-

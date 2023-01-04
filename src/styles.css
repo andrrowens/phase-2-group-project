@@ -7,7 +7,6 @@ body {
 }
 
 .container {
-  margin: 1rem;
   text-align: center;  
 }
 
@@ -68,6 +67,47 @@ body {
 }
 .backToTop:hover {
   background: #80cfe9;
+}
+
+.home-container{
+  background-image: url("https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg");
+  background-color: red;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.home-title-image{
+background-image: url("https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg");
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+.home-title{
+background-color: rgba(255, 255, 255, 0.507);
+white-space: normal;
+color: rgb(255, 255, 255);
+font-size: 5em;
+font-family: 'DM Serif Display', serif;
+justify-content: space-around center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: .5em;
+}
+
+.home-subtitle{
+
 }
 
 .explore-header {
@@ -308,6 +348,7 @@ input {
   padding: 1.5rem;
 }
 
+
 .start-btn {
   --b: 3px;   /* border thickness */
   --s: .65em; /* size of the corner */
@@ -356,6 +397,7 @@ input {
 }
 
 
+
 /* CSS */
 .entire-quiz{
   position: absolute;
@@ -382,6 +424,7 @@ input {
 .answer-span {
   padding: 10px;
   text-align: center;
+
 }
 .answer-btn{
   position: center;
