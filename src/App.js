@@ -1,3 +1,4 @@
+import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/pages/homepage/Home';
 import Explore from './components/pages/explore/Explore';

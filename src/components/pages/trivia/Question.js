@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 import Answers from "./Answers";
 
 const Question = ({ questions }) => {
@@ -39,11 +40,12 @@ const Question = ({ questions }) => {
   };
   const mappedAnswers = questions[currentQuestion].answerOptions.map(
     (answerOption) => (
-      <button
+      <button className="answer-btn"
         onClick={() => handleAnswerClick(answerOption.isCorrect)}
         key={questions.id}
       >
         {answerOption.answerText}
+       
       </button>
     )
   );
@@ -66,9 +68,10 @@ const Question = ({ questions }) => {
       <div className="game-over">
       <h1>Game Over</h1>
       <h2>Total Points: {points}</h2>
+      <button>↩️</button>
       </div>)}
 
-      <button>↩️</button>
+      
     </div>
   );
 };

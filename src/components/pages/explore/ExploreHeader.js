@@ -1,3 +1,4 @@
+import React from 'react';
 const ExploreHeader = ({searchPark, setSearchPark}) => {
 
     const handleSearch = (e) => {
