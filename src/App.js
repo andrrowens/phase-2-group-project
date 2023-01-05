@@ -7,6 +7,8 @@ import Trivia from './components/pages/trivia/Trivia';
 import { Route, Routes } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import questions from './questions'
+import GameOver from './components/pages/trivia/GameOver';
+
 
 function App() {
   
@@ -52,12 +54,11 @@ useEffect(() => {
       <><Navbar />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home className="home" />} />
           <Route path="/explore" element={<Explore parks={filteredParks} key={parks.id} searchPark={searchPark} setSearchPark={setSearchPark}/>} />
           <Route path="/reviews" element={<Reviews />} />
-
           <Route path="/trivia" element={<Trivia className="trivia-container" questions={questions}/>} />
-
+          <Route path="/gameover" element={<GameOver />} />
         </Routes>
         {scrollTop && (
         <button onClick={bottomToTop} className="backToTop">
@@ -70,4 +71,3 @@ useEffect(() => {
 }
 
 export default App;
-
