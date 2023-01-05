@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import GameOver from "./GameOver";
 
 
-import Answers from "./Answers";
 
 const Question = ({ questions }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -69,11 +69,7 @@ const Question = ({ questions }) => {
           </span>
         </div>
       </div>) : (
-      <div className="game-over">
-      <h1>Game Over</h1>
-      <h2>Total Points: {points}</h2>
-      <button>↩️</button>
-      </div>)}
+      <GameOver points={points}/>)}
 
       
     </div>

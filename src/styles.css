@@ -292,10 +292,13 @@ input {
 /*<<< WELCOME & START BUTTON>>> */
 
 .triv-container {
-  min-height: 100%;
+  position: absolute;
+  display: center;
+  /* min-height: 100%; */
   background-image: url('https://i.pinimg.com/originals/6c/0d/f0/6c0df0b7e26c40e1a1de85e51106f940.jpg');
-  background-size: cover;
-  height: 600px;
+  background-size: fill;
+  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   font-size: 1.5rem;
@@ -344,12 +347,18 @@ input {
 }
 
 .quest-container{
-  min-height: 100%;
+  position: absolute;
+  display: center;
+  /* min-height: 100%; */
   background-image: url('https://i.pinimg.com/originals/6c/0d/f0/6c0df0b7e26c40e1a1de85e51106f940.jpg');
-  background-size: cover;
-  height: 600px;
+
+  background-size: contain;
+  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
   color:black;
   text-transform: uppercase;
 
@@ -358,15 +367,16 @@ input {
 
 /* CSS */
 .entire-quiz{
+  backdrop-filter: blur(2px);
   position: absolute;
   top: 10%;
   left: 10%;
   margin-top: 10%;
-  margin-bottom: 10;
+  margin-bottom: 5;
   margin-right: 10%;
   margin-left: 10%;
   width: 60%;
-  height: 60%;
+  height: 50%;
   
   box-shadow: rgb(3, 3, 4) 0px 25px 40px -5px;
   
@@ -380,7 +390,7 @@ input {
   text-transform: uppercase;
 }
 .answer-span {
-  padding: 10px;
+  padding: 30px;
   text-align: center;
 }
 .answer-btn{
@@ -388,6 +398,7 @@ input {
   padding: 15px;
   text-align: center;
   font-size: 90%;
+  font-style: bold;
   
   color: black;
   width:20%;
@@ -399,7 +410,7 @@ input {
   }
   .answer-btn {
     
-    border-color: opaque transparent;
+    border-color: white ;
     padding: 0.5;
     cursor: pointer;
     /* font-size: 80%; */
@@ -415,6 +426,11 @@ input {
   .answer-btn:hover {
     color: #ffffff;
     background-position: 100%;
+  }
+
+  .game-over{
+    font-size: xx-large;
+
   }
   
 
