@@ -31,7 +31,7 @@ const Trivia = ({ questions }) => {
       {isRendered ? (
         <div className="quest-container">
         <section>
-          <Question questions={questions} />
+          <Question questions={questions} key={questions.id} />
           
           {/* <button>🎵 </button>
           <button onClick={handleClick}>🔉 </button> */}
