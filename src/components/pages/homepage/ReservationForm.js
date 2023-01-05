@@ -1,26 +1,33 @@
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import { useState } from 'react'
+import React,{ useState } from 'react'
+
 
 const ReservationForm = () => {
 
-const [reserve, setReserve] = useState("")
+const [name, setName] = useState("")
+const [email, setEmail] = useState("")
 
-const handleReserveChange = (e) => {
-    setReserve(e.target.value)
+
+const handleNameChange = (e) => {
+    setName(e.target.value)
 }
+
+const handleEmailChange = (e) => {
+    setEmail(e.target.value)
+}
+
 const handleReserveSubmit = (e) => {
     alert("Your reservation was successful. Please allow up to 10 minutes to receive your confirmation email. Thank you!");
-    setReserve("")
+    setName("")
+    setEmail("")
 }
 
     return (
         <div>
         <form onSubmit={handleReserveSubmit} className="reservation-form">
       
-    <input onChange={handleReserveChange} name="name" className="res-selection" type="text" placeholder="Please enter your full name" value={reserve}/> <br />
-
-        <select className="res-selection" name="group">
+    <input onChange={handleNameChange} name="name" className="res-selection" type="text" placeholder="Please enter your full name" value={name} required/> <br />
+    <input onChange={handleEmailChange} name="email" className="res-selection" type="text" placeholder="Enter your email" value={email} required/> <br />
+        <select className="res-selection" name="group" required>
         <option value="group">Number of adults</option>
         <option value="small">1-3 Adults</option>
         <option value="med">4-6 Adults</option>
@@ -28,7 +35,7 @@ const handleReserveSubmit = (e) => {
         </select>
         <br />
 
-        <select className="res-selection" name="park">
+        <select className="res-selection" name="park" required>
         <option value="Park Not Selected">Which National Park are you visiting?</option>
         <option value="Denali">Denali</option>
         <option value="Gates of the Artic">Gates of the Artic</option>
@@ -95,9 +102,9 @@ const handleReserveSubmit = (e) => {
         <option value="Virgin Islands">Virgin Islands</option>
         </select> < br />
       
-        <DatePicker name="date" className="res-selection" placeholderText="select a date" type="select"/><br />
+        <input name="date" className="res-selection" placeholderText="select a date" type="date" required/><br />
  
-        <select className="res-selection" name="length">
+        <select className="res-selection" name="length" required>
         <option value="length">Length of stay</option>
         <option value="ONE">1 Day</option>
         <option value="TWO">2 Days</option>
@@ -107,7 +114,7 @@ const handleReserveSubmit = (e) => {
         <option value="SIX">6 Days</option>
         <option value="SEVEN">7 Days</option>
         </select>
-
+        <br/>
         <button className="res-selection-btn"  type="submit">Reserve Site</button>
         </form>
         </div>
