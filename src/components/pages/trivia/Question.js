@@ -18,7 +18,7 @@ const Question = ({ questions, id }) => {
 
   const showQuestions = questions[currentQuestion].questionText;
 
-  const listOfHearts = hearts.map((heart) => <span className="">{heart} key={heart.id} </span>);
+  const listOfHearts = hearts.map((heart) => <span className="">{heart}  </span>);
 
   const handleAnswerClick = (isCorrect) => {
     if (isCorrect) {
