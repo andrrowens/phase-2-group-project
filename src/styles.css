@@ -372,17 +372,18 @@ input {
   top: 10%;
   left: 10%;
   margin-top: 10%;
-  margin-bottom: 5;
+  margin-bottom: 5%;
   margin-right: 10%;
   margin-left: 10%;
   width: 60%;
-  height: 50%;
+  height: auto;
   
   box-shadow: rgb(3, 3, 4) 0px 25px 40px -5px;
   
   ;
   border-width: 2px;
   border-radius: 30px;
+  padding-bottom: 15px;
 }
 .questions{
   padding: 30px;
@@ -390,14 +391,14 @@ input {
   text-transform: uppercase;
 }
 .answer-span {
-  padding: 30px;
+  padding: 50px;
   text-align: center;
 }
 .answer-btn{
   position: center;
   padding: 15px;
   text-align: center;
-  font-size: 90%;
+  font-size: 75%;
   font-style: bold;
   
   color: black;
@@ -411,7 +412,7 @@ input {
   .answer-btn {
     
     border-color: white ;
-    padding: 0.5;
+    padding: 10px;
     cursor: pointer;
     /* font-size: 80%; */
     color: black;
@@ -421,6 +422,7 @@ input {
     -webkit-transition: background 500ms ease-in-out, color 500ms ease-in-out;
     transition: background 500ms ease-in-out, color 500ms ease-in-out;
     table-layout: fixed;
+    padding-bottom: 10px;
   }
   
   .answer-btn:hover {
