@@ -48,9 +48,9 @@ const ReviewForm = ({setReviews}) => {
     <div>
       { showForm ? ( 
       <form className="new-review-form" onSubmit={handleSubmit}>
+        <h1 className="drop-down-header" value="Select A Park">Select A Park</h1> 
         <label htmlFor="park"></label>
-        <select className="drop-down" onChange={handleChange} name="park" id="selectList">
-        <option value="Park Not Selected">Select A Park</option>
+        <select className="drop-down" onChange={handleChange} name="park" id="selectList" size="10">     
         <option value="Denali">Denali</option>
         <option value="Gates of the Artic">Gates of the Artic</option>
         <option value="Glacier Bay">Glacier Bay</option>
