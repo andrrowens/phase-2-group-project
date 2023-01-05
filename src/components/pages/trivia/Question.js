@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import Answers from "./Answers";
+
 const Question = ({ questions }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [points, setPoints] = useState(0);
@@ -72,4 +74,5 @@ const Question = ({ questions }) => {
     </div>
   );
 };
+
 export default Question;
