@@ -72,23 +72,25 @@ body {
 .home-container {
   display: grid;
   grid-template-rows: 70vh 60vh 10vh;
+  grid-template-columns: 140vh;
 }
 
 .home-top-div{
   grid-row: 1;
-  background-image: url("https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg");
+  columns: 1;
+  background-image: url("https://wallpaperaccess.com/full/533108.jpg");
   width: 100%;
   height: 70%;
   position: absolute;
   top: 10;
   left: 0;
   margin: 0 auto;
-  display: flex;
+  display: inherit;
+  background-size: cover;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .home-title{
@@ -110,40 +112,76 @@ grid-row: 2;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: pink;
+background-color: rgb(183, 193, 196);
 }
 
 .left-div{
   float: left;
-  width: 70%;
+  width: 80%;
   height: 100%;
-  border: solid 5px black;
 }
 
 .book-res{
-  width: 100%;
+  width: 90%;
   height:20%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 40px;
+  background-color: rgba(255, 255, 255, 0.495);
+
+}
+
+.book-res-btn{
+  font-size: 20px;;
+}
+
+.book-res-btn:hover{
+  cursor: pointer;
+  color: white;
 }
 
 .reserve-div{
+  height: 14em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border: 1px solid black;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80%;
+  height: 60%;
 }
 
-.reservation-form{
-  border: 5px solid black;
-  width: 100%;
+.reserve-hidden-div{
+ height: 14em;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
 }
+
+.reserve-img{
+  height: 14em;
+  width: 29em;
+  flex-shrink: 0;
+}
+.reservation-form{
+  width: 100%;
+  height: 11em;
+}
+
 .res-selection{
   width: 100%;
-  font-size: 15px;;
+  font-size: 1em;
+  height: 2.6em;
+}
+
+.res-selection-btn{
+  width: 100%;
+  font-size: 15px;
+  height: 2.25em;
+  color: rgb(209, 255, 212);
+  background-color: rgb(44, 167, 44);
 }
 
 .right-div{
@@ -151,13 +189,12 @@ background-color: pink;
   color: red;
   width: 30%;
   height: 100%;
-  border: solid 5px black;
   background-color: white;
 }
 
 .newsletter{
   grid-row: 3;
-  width: 100%;
+  width: 140vh;
   height: 100%;
   background-color: blue;
   display: flex;

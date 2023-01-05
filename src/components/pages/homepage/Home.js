@@ -1,10 +1,14 @@
-import React, { useState } from "react";
-
+import { useState } from 'react'
 import ReservationForm from "./ReservationForm"
 
 
 
 export default function Home() {
+const [form, showForm] = useState(false)
+
+const handleShowForm = () => {
+showForm(currentValue => !currentValue)
+}
   return (
     <div className="home-container">
     <div className="home-top-div">
@@ -12,10 +16,12 @@ export default function Home() {
     </div>
     <div className="home-bottom-div">
       <div className="left-div">
-      <p className="book-res">Book a reservation</p>
-      <div className="reserve-div">heres our calendar, select a date
+      <p className="book-res">Explore the Beauty of America's National Parks</p>
+      <p className="book-res-btn" onClick={handleShowForm} >Plan your trip</p>
+      { form ? (
+      <div className="reserve-div">
       <ReservationForm />
-      </div>
+      </div>) : (<div className="reserve-hidden-div"></div>)}
       </div>
       <div className="right-div">right div weather tracker</div>
     </div>

@@ -1,28 +1,35 @@
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { useState } from 'react'
 
 const ReservationForm = () => {
 
-const handleReserve = (e) => {
-    e.preventDefault();
+const [reserve, setReserve] = useState("")
+
+const handleReserveChange = (e) => {
+    setReserve(e.target.value)
+}
+const handleReserveSubmit = (e) => {
     alert("Your reservation was successful. Please allow up to 10 minutes to receive your confirmation email. Thank you!");
+    setReserve("")
 }
 
     return (
         <div>
-        <form onSubmit={handleReserve} className="reservation-form">
-        {/* <label htmlFor="author"></label> */}
-        <input className="res-selection"  type="text" placeholder="Author" name="author" value="please enter your full name" /> <br />
-        <select className="res-selection" name="party">
-        <option value="group">how many people will be in your party?</option>
-        <option value="1">1-3 Adults</option>
-        <option value="4">4-7 Adults</option>
-        <option value="8">8+ Adults</option>
+        <form onSubmit={handleReserveSubmit} className="reservation-form">
+      
+    <input onChange={handleReserveChange} name="name" className="res-selection" type="text" placeholder="Please enter your full name" value={reserve}/> <br />
+
+        <select className="res-selection" name="group">
+        <option value="group">Number of adults</option>
+        <option value="small">1-3 Adults</option>
+        <option value="med">4-6 Adults</option>
+        <option value="large">7+ Adults</option>
         </select>
         <br />
-        {/* <label htmlFor="park"></label> */}
-        <select className="res-selection"  name="park">
-        <option value="Park Not Selected">select a national park</option>
+
+        <select className="res-selection" name="park">
+        <option value="Park Not Selected">Which National Park are you visiting?</option>
         <option value="Denali">Denali</option>
         <option value="Gates of the Artic">Gates of the Artic</option>
         <option value="Glacier Bay">Glacier Bay</option>
@@ -87,11 +94,21 @@ const handleReserve = (e) => {
         <option value="American Samoa">American Samoa</option>
         <option value="Virgin Islands">Virgin Islands</option>
         </select> < br />
-        {/* <label htmlFor="date"></label> */}
-        <DatePicker className="res-selection" placeholderText="select a date" type="select"/><br />
-        {/* <label htmlFor="title"></label> */}
-        <input className="res-selection" type="text" placeholder="Title" name="title" value="test" /> <br />
-        <button className="res-selection"  type="submit">Reserve Site</button>
+      
+        <DatePicker name="date" className="res-selection" placeholderText="select a date" type="select"/><br />
+ 
+        <select className="res-selection" name="length">
+        <option value="length">Length of stay</option>
+        <option value="ONE">1 Day</option>
+        <option value="TWO">2 Days</option>
+        <option value="THREE">3 Days</option>
+        <option value="FOUR">4 Days</option>
+        <option value="FIVE">5 Days</option>
+        <option value="SIX">6 Days</option>
+        <option value="SEVEN">7 Days</option>
+        </select>
+
+        <button className="res-selection-btn"  type="submit">Reserve Site</button>
         </form>
         </div>
     )

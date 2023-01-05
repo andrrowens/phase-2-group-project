@@ -48,7 +48,7 @@ useEffect(() => {
       <><Navbar />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home className="home" />} />
           <Route path="/explore" element={<Explore parks={filteredParks} key={parks.id} searchPark={searchPark} setSearchPark={setSearchPark}/>} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/trivia" element={<Trivia questions={questions}/>} />
