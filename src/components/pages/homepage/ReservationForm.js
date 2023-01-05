@@ -1,56 +1,35 @@
-import React from "react";
-import { useState } from "react"
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import { useState } from 'react'
 
-const ReviewForm = ({setReviews}) => {
+const ReservationForm = () => {
 
-    const [showForm, setShowForm] = useState(false);
+const [reserve, setReserve] = useState("")
 
-    const [newReview, setNewReview] = useState({
-      park: "",
-      title: "",
-      content: "",
-      author: "",
-      image: "",
-    })
-
-    const handleChange = ({target: {name, value}}) => {
-      setNewReview({...newReview, [name]: value})
-  }
-
-    const handleSubmit = (e) => {
-      e.preventDefault()
-
-      fetch("http://localhost:3000/reviews", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(newReview)
-      })
-        .then(response => response.json())
-        .then(newData => setReviews(currentReviewList => 
-          [newData, ...currentReviewList]))
-        .catch(error => alert(error))
-        setNewReview({
-          park: "",
-          title: "",
-          content: "",
-          author: "",
-          image: "",
-        })
-    }
-
-    const handleShowForm = () => {
-      setShowForm(currentValue => !currentValue) 
-    }
+const handleReserveChange = (e) => {
+    setReserve(e.target.value)
+}
+const handleReserveSubmit = (e) => {
+    alert("Your reservation was successful. Please allow up to 10 minutes to receive your confirmation email. Thank you!");
+    setReserve("")
+}
 
     return (
-    <div>
-      { showForm ? ( 
-      <form className="new-review-form" onSubmit={handleSubmit}>
-        <h1 className="drop-down-header" value="Select A Park">Select A Park</h1> 
-        <label htmlFor="park"></label>
-        <select className="drop-down" onChange={handleChange} name="park" id="selectList" size="10">     
+        <div>
+        <form onSubmit={handleReserveSubmit} className="reservation-form">
+      
+    <input onChange={handleReserveChange} name="name" className="res-selection" type="text" placeholder="Please enter your full name" value={reserve}/> <br />
+
+        <select className="res-selection" name="group">
+        <option value="group">Number of adults</option>
+        <option value="small">1-3 Adults</option>
+        <option value="med">4-6 Adults</option>
+        <option value="large">7+ Adults</option>
+        </select>
+        <br />
+
+        <select className="res-selection" name="park">
+        <option value="Park Not Selected">Which National Park are you visiting?</option>
         <option value="Denali">Denali</option>
         <option value="Gates of the Artic">Gates of the Artic</option>
         <option value="Glacier Bay">Glacier Bay</option>
@@ -115,20 +94,28 @@ const ReviewForm = ({setReviews}) => {
         <option value="American Samoa">American Samoa</option>
         <option value="Virgin Islands">Virgin Islands</option>
         </select> < br />
-        <label htmlFor="title"></label>
-        <input className="user-input" onChange={handleChange} type="text" placeholder="Title" name="title" value={newReview.title} /> <br />
-        <label htmlFor="author"></label>
-        <input className="user-input" onChange={handleChange} type="text" placeholder="Author" name="author" value={newReview.author} /> <br />
-        <label htmlFor="image"></label>
-        <input className="user-input" onChange={handleChange} type="text" placeholder="Image" name="image" value={newReview.image} /> <br />
-        <label htmlFor="content"></label>
-        <textarea className="user-input" onChange={handleChange} type="text" placeholder="Write your review here!" rows={10} name="content" value={newReview.content} /> <br />
-        <button className="form-button" type="submit">Submit</button>
-     </form>
-  ) : null}
-     <button className="form-button" onClick={handleShowForm}>{ !showForm ? "Submit A Review!" : "Hide Review Form"}</button>
-    </div>  
+      
+        <DatePicker name="date" className="res-selection" placeholderText="select a date" type="select"/><br />
+ 
+        <select className="res-selection" name="length">
+        <option value="length">Length of stay</option>
+        <option value="ONE">1 Day</option>
+        <option value="TWO">2 Days</option>
+        <option value="THREE">3 Days</option>
+        <option value="FOUR">4 Days</option>
+        <option value="FIVE">5 Days</option>
+        <option value="SIX">6 Days</option>
+        <option value="SEVEN">7 Days</option>
+        </select>
+
+        <button className="res-selection-btn"  type="submit">Reserve Site</button>
+        </form>
+        </div>
     )
+       
+
 }
 
-export default ReviewForm;
+export default ReservationForm
+
+
