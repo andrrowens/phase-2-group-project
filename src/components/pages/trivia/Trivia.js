@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Question from "./Question";
 
-
 const Trivia = ({ questions }) => {
   const [isRendered, setIsRendered] = useState(false);
   const [isStartRendered, setIsStartRendered] = useState(true);

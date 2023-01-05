@@ -9,7 +9,9 @@ const Question = ({ questions, id }) => {
   const [points, setPoints] = useState(0);
   let [wrongAnswer, setWrongAnswer] = useState(0);
   const [hearts, setHearts] = useState(["❤", "❤", "❤"]);
+
   const [stillPlaying, setStillPlaying] = useState(true)
+
   const navigate = useNavigate();
 
   
@@ -30,7 +32,9 @@ const Question = ({ questions, id }) => {
         setHearts(["❤"]);
       } else {
         setHearts([])
+
         setStillPlaying(false)
+
        navigate("/gameover")
       }
     }

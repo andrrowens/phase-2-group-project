@@ -71,4 +71,3 @@ useEffect(() => {
 }
 
 export default App;
-
