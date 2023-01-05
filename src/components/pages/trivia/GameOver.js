@@ -1,7 +1,8 @@
-import React, {useState} from 'react'
+import React from'react';
 import { useNavigate } from 'react-router-dom'
 
 const GameOver = ({points})=>{
+ 
   const navigateHome = useNavigate()
   const navigateTrivia = useNavigate()
   
@@ -18,7 +19,9 @@ const GameOver = ({points})=>{
   return (
     <div className="game-over">
     <h1>Game Over</h1>
-    <h2>Total Points: {points}</h2>
+    <div className="game-over-content">
+    <h2> {points} </h2>
+    </div>
     <button onClick={handleGoTrivia} className="play-again">Play Again</button>
     <button onClick={handleGoHome} className="back-home">Back Home</button>
     </div>)
