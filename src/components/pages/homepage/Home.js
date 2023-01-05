@@ -31,9 +31,6 @@ showForm(currentValue => !currentValue)
       <div className="right-div">right div weather tracker</div>
     </div>
     <div className="newsletter">sign up for it</div>
-
-    <div className="home-bottom-div">Hello</div>
-
     </div>
   )
 }
