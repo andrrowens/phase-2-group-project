@@ -562,13 +562,22 @@ height: 30em;
 width: 45em;
 border: 1rem solid rgba(48, 52, 67, 0.326);
 border-color: black;
+position: relative;
+}
+
+.drop-down-header {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: Optima, sans-serif;
+  text-align: center;
+  padding: 0.5em;
 }
 
 .drop-down {
 font-size: 2em;
 font-weight: bold;
 font-family: Optima, sans-serif;
-text-align: center
+text-align: center;
 }
 
 .user-input {
