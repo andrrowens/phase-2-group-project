@@ -15,7 +15,7 @@ const ExploreHeader = ({searchPark, setSearchPark}) => {
 
     <h1 className="welcome">
 
-    Explore America's National Parks
+    U.S. National Parks
     </h1>
     <p className="discover">Discover our most treasured places, supported by people like <b>you</b>.</p>
 
