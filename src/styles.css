@@ -7,6 +7,7 @@ body {
 }
 
 .container {
+  margin: 1rem;
   text-align: center;  
 }
 
@@ -67,47 +68,6 @@ body {
 }
 .backToTop:hover {
   background: #80cfe9;
-}
-
-.home-container{
-  background-image: url("https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg");
-  background-color: red;
-    width: 100%;
-    min-height: 100vh;
-    max-height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0 auto;
-}
-
-.home-title-image{
-background-image: url("https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg");
-display: flex;
-justify-content: center;
-align-items: center;
-overflow: hidden;
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-
-.home-title{
-background-color: rgba(255, 255, 255, 0.507);
-white-space: normal;
-color: rgb(255, 255, 255);
-font-size: 5em;
-font-family: 'DM Serif Display', serif;
-justify-content: space-around center;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-padding: .5em;
-}
-
-.home-subtitle{
-
 }
 
 .explore-header {
@@ -332,10 +292,13 @@ input {
 /*<<< WELCOME & START BUTTON>>> */
 
 .triv-container {
-  min-height: 100%;
+  position: absolute;
+  display: center;
+  /* min-height: 100%; */
   background-image: url('https://i.pinimg.com/originals/6c/0d/f0/6c0df0b7e26c40e1a1de85e51106f940.jpg');
-  background-size: cover;
-  height: 600px;
+  background-size: fill;
+  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   font-size: 1.5rem;
@@ -347,7 +310,6 @@ input {
 .wrap{
   padding: 1.5rem;
 }
-
 
 .start-btn {
   --b: 3px;   /* border thickness */
@@ -385,36 +347,43 @@ input {
 }
 
 .quest-container{
-  min-height: 100%;
+  position: absolute;
+  display: center;
+  /* min-height: 100%; */
   background-image: url('https://i.pinimg.com/originals/6c/0d/f0/6c0df0b7e26c40e1a1de85e51106f940.jpg');
-  background-size: cover;
-  height: 600px;
+
+  background-size: contain;
+  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
   color:black;
   text-transform: uppercase;
 
 }
 
 
-
 /* CSS */
 .entire-quiz{
+  backdrop-filter: blur(2px);
   position: absolute;
   top: 10%;
   left: 10%;
   margin-top: 10%;
-  margin-bottom: 10;
+  margin-bottom: 5%;
   margin-right: 10%;
   margin-left: 10%;
   width: 60%;
-  height: 60%;
+  height: auto;
   
   box-shadow: rgb(3, 3, 4) 0px 25px 40px -5px;
   
   ;
   border-width: 2px;
   border-radius: 30px;
+  padding-bottom: 15px;
 }
 .questions{
   padding: 30px;
@@ -422,15 +391,15 @@ input {
   text-transform: uppercase;
 }
 .answer-span {
-  padding: 10px;
+  padding: 50px;
   text-align: center;
-
 }
 .answer-btn{
   position: center;
   padding: 15px;
   text-align: center;
-  font-size: 90%;
+  font-size: 75%;
+  font-style: bold;
   
   color: black;
   width:20%;
@@ -442,8 +411,8 @@ input {
   }
   .answer-btn {
     
-    border-color: opaque transparent;
-    padding: 0.5;
+    border-color: white ;
+    padding: 10px;
     cursor: pointer;
     /* font-size: 80%; */
     color: black;
@@ -453,11 +422,17 @@ input {
     -webkit-transition: background 500ms ease-in-out, color 500ms ease-in-out;
     transition: background 500ms ease-in-out, color 500ms ease-in-out;
     table-layout: fixed;
+    padding-bottom: 10px;
   }
   
   .answer-btn:hover {
     color: #ffffff;
     background-position: 100%;
+  }
+
+  .game-over{
+    font-size: xx-large;
+
   }
   
 
