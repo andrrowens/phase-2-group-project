@@ -1,6 +1,10 @@
+
 import { useState } from 'react'
 import ReservationForm from "./ReservationForm"
 
+
+
+import React from'react';
 
 
 export default function Home() {
@@ -14,6 +18,7 @@ showForm(currentValue => !currentValue)
     <div className="home-top-div">
         <span className="home-title">Welcome</span>
     </div>
+
     <div className="home-bottom-div">
       <div className="left-div">
       <p className="book-res">Explore the Beauty of America's National Parks</p>
@@ -26,6 +31,9 @@ showForm(currentValue => !currentValue)
       <div className="right-div">right div weather tracker</div>
     </div>
     <div className="newsletter">sign up for it</div>
+
+    <div className="home-bottom-div">Hello</div>
+
     </div>
   )
 }
