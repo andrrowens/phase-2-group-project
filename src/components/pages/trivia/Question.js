@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import GameOver from "./GameOver";
 
-import Answers from "./Answers";
+
 
 const Question = ({ questions }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -8,6 +10,9 @@ const Question = ({ questions }) => {
   let [wrongAnswer, setWrongAnswer] = useState(0);
   const [hearts, setHearts] = useState(["❤", "❤", "❤"]);
   const [totalPoints, setTotalPoints] = useState(true)
+  const navigate = useNavigate();
+
+  
 
   const showQuestions = questions[currentQuestion].questionText;
 
@@ -26,6 +31,7 @@ const Question = ({ questions }) => {
       } else {
         setHearts([])
         setTotalPoints(false)
+       navigate("/gameover")
       }
     }
 
@@ -68,15 +74,10 @@ const Question = ({ questions }) => {
           </span>
         </div>
       </div>) : (
-      <div className="game-over">
-      <h1>Game Over</h1>
-      <h2>Total Points: {points}</h2>
-      <button>↩️</button>
-      </div>)}
+      <GameOver points={points}/>)}
 
       
     </div>
   );
 };
-
 export default Question;
