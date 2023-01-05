@@ -22,10 +22,6 @@ showForm(currentValue => !currentValue)
       <div className="reserve-div">
       <ReservationForm />
       </div>) : null }
-
-    {/* <div className="home-bottom-div">
-      </div>
-    <div className="newsletter">sign up for it</div> */}
     </div>
   )
 }

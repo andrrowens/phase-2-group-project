@@ -24,9 +24,9 @@ const handleReserveSubmit = (e) => {
         <div>
         <form onSubmit={handleReserveSubmit} className="reservation-form">
       
-    <input onChange={handleNameChange} name="name" className="res-selection" type="text" placeholder="Please enter your full name" value={name}/> <br />
-    <input onChange={handleEmailChange} name="email" className="res-selection" type="text" placeholder="Enter your email" value={email}/> <br />
-        <select className="res-selection" name="group">
+    <input onChange={handleNameChange} name="name" className="res-selection" type="text" placeholder="Please enter your full name" value={name} required/> <br />
+    <input onChange={handleEmailChange} name="email" className="res-selection" type="text" placeholder="Enter your email" value={email} required/> <br />
+        <select className="res-selection" name="group" required>
         <option value="group">Number of adults</option>
         <option value="small">1-3 Adults</option>
         <option value="med">4-6 Adults</option>
@@ -34,7 +34,7 @@ const handleReserveSubmit = (e) => {
         </select>
         <br />
 
-        <select className="res-selection" name="park">
+        <select className="res-selection" name="park" required>
         <option value="Park Not Selected">Which National Park are you visiting?</option>
         <option value="Denali">Denali</option>
         <option value="Gates of the Artic">Gates of the Artic</option>
@@ -103,7 +103,7 @@ const handleReserveSubmit = (e) => {
       
         <input name="date" className="res-selection" placeholderText="select a date" type="date" required/><br />
  
-        <select className="res-selection" name="length">
+        <select className="res-selection" name="length" required>
         <option value="length">Length of stay</option>
         <option value="ONE">1 Day</option>
         <option value="TWO">2 Days</option>
