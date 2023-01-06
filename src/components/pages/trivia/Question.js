@@ -37,7 +37,7 @@ const Question = ({ questions, id }) => {
 
         setStillPlaying(false)
 
-       navigate("/gameover")
+       navigate("/gameover", {state: {points:points}})
       }
     }
 
