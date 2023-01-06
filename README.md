@@ -35,7 +35,9 @@ The Navigation bar at the top of the page can bring you to 4 destinations where 
 
 * <b>Trivia</b> - Test your knowledge with our Nation Park Trivia Game!
  
-![This is an image!]()
+![Trivia Homepage](public/images/triviahome.png)
+![Trivia Question](public/images/triviaquestion.png)
+![Gameover page](public/images/gameover.png)
 
 
 ## Further Reading
