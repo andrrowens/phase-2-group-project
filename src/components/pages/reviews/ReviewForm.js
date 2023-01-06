@@ -120,7 +120,7 @@ const ReviewForm = ({setReviews}) => {
         <label htmlFor="author"></label>
         <input className="user-input" onChange={handleChange} type="text" placeholder="Author" name="author" value={newReview.author} required /> <br />
         <label htmlFor="image"></label>
-        <input className="user-input" onChange={handleChange} type="text" placeholder="Image" name="image" value={newReview.image} required /> <br />
+        <input className="user-input" onChange={handleChange} type="text" placeholder="Image URL" name="image" value={newReview.image} required /> <br />
         <label htmlFor="content"></label>
         <textarea className="user-input" onChange={handleChange} type="text" placeholder="Write your review here!" rows={10} name="content" required value={newReview.content} /> <br />
         <button className="form-button" type="submit">Submit</button>
