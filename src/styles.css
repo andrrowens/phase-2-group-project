@@ -392,14 +392,15 @@ input {
   width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   padding: 1rem 3rem;
   color:black;
   text-transform: uppercase;
 }
 
 .wrap{
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
+  padding-top: 5ch;
 }
 
 .start-btn {
@@ -531,10 +532,10 @@ input {
     background-position: 100%;
   }
 
-  .game-over{
-    font-size: xx-large;
+  
+    
 
-  }
+  
   @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 * {
   padding: 0;
@@ -548,6 +549,7 @@ input {
 }
 .waviy span {
   font-family: 'Alfa Slab One', cursive;
+  font-size: 1.5em;
   position: relative;
   display: inline-block;
   color: black;
@@ -564,9 +566,21 @@ input {
     transform: translateY(-20px)
   }
 }
-.dancing {
-
+img.dancing-guy {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 7%;
+  height: 7%;
 }
+.game-over__wrapper{
+ padding-top: 5ch;
+  
+}
+.triv-container-wrapper{
+  padding-top: 6ch;
+}
+
 
 
 

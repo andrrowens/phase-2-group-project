@@ -23,6 +23,7 @@ const GameOver = ({points})=>{
   
   return (
     <div className="game-over">
+      <div className="game-over__wrapper">
       <div className="waviy">
     
     <span style={{'--i':'1'}}>G</span>
@@ -36,12 +37,13 @@ const GameOver = ({points})=>{
    
    </div>
     <div className="game-over-content">
-    <h2> {from} </h2>
+    <h2> {points} </h2>
+    </div>
+    <div className="gif-container">
+      <img className="dancing-guy" src="https://thumbs.gfycat.com/GoldenBogusHamster.webp" alt="game-over" />
     </div>
     <button onClick={handleGoTrivia} className="play-again">Play Again</button>
     <button onClick={handleGoHome} className="back-home">Back Home</button>
-    <div className="dancing">
-      <img src="https://thumbs.gfycat.com/GoldenBogusHamster.webp" alt="game-over" />
     </div>
     </div>)
 }
