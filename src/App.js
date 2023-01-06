@@ -9,7 +9,6 @@ import { useState, useEffect } from 'react';
 import questions from './questions'
 import GameOver from './components/pages/trivia/GameOver';
 
-
 function App() {
    
 const [parks, setParks] = useState([])
