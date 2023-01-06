@@ -471,6 +471,7 @@ input {
 .game-over {
   position: absolute;
   display: center;
+  background-size: 100% 100%;
   background-image: url("https://iili.io/HRNSOBe.png");
   background-size: fill;
   height: 100%;
