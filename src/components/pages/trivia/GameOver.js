@@ -7,7 +7,7 @@ const GameOver = ({points})=>{
   const navigateTrivia = useNavigate()
   const location = useLocation()
   
-  const { from } = location.state
+  // const { from } = location.state
 
   
   
