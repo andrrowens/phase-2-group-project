@@ -11,9 +11,7 @@ import GameOver from './components/pages/trivia/GameOver';
 
 
 function App() {
-  
-  
-  
+   
 const [parks, setParks] = useState([])
 const [scrollTop, setScrollTop] = useState(false);
 const [searchPark, setSearchPark] = useState("")

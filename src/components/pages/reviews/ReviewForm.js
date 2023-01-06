@@ -50,7 +50,7 @@ const ReviewForm = ({setReviews}) => {
       <form className="new-review-form" onSubmit={handleSubmit}>
         <h1 className="drop-down-header" value="Select A Park">Select A Park</h1> 
         <label htmlFor="park"></label>
-        <select className="drop-down" onChange={handleChange} name="park" id="selectList" size="10">     
+        <select className="drop-down" onChange={handleChange} name="park" id="selectList" size="10" required>     
         <option value="Denali">Denali</option>
         <option value="Gates of the Artic">Gates of the Artic</option>
         <option value="Glacier Bay">Glacier Bay</option>
@@ -116,13 +116,13 @@ const ReviewForm = ({setReviews}) => {
         <option value="Virgin Islands">Virgin Islands</option>
         </select> < br />
         <label htmlFor="title"></label>
-        <input className="user-input" onChange={handleChange} type="text" placeholder="Title" name="title" value={newReview.title} /> <br />
+        <input className="user-input" onChange={handleChange} type="text" placeholder="Title" name="title" value={newReview.title} required /> <br />
         <label htmlFor="author"></label>
-        <input className="user-input" onChange={handleChange} type="text" placeholder="Author" name="author" value={newReview.author} /> <br />
+        <input className="user-input" onChange={handleChange} type="text" placeholder="Author" name="author" value={newReview.author} required /> <br />
         <label htmlFor="image"></label>
-        <input className="user-input" onChange={handleChange} type="text" placeholder="Image" name="image" value={newReview.image} /> <br />
+        <input className="user-input" onChange={handleChange} type="text" placeholder="Image URL" name="image" value={newReview.image} required /> <br />
         <label htmlFor="content"></label>
-        <textarea className="user-input" onChange={handleChange} type="text" placeholder="Write your review here!" rows={10} name="content" value={newReview.content} /> <br />
+        <textarea className="user-input" onChange={handleChange} type="text" placeholder="Write your review here!" rows={10} name="content" required value={newReview.content} /> <br />
         <button className="form-button" type="submit">Submit</button>
      </form>
   ) : null}
