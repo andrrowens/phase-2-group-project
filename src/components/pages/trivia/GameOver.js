@@ -42,8 +42,10 @@ const GameOver = ({points})=>{
     <div className="gif-container">
       <img className="dancing-guy" src="https://thumbs.gfycat.com/GoldenBogusHamster.webp" alt="game-over" />
     </div>
+    <div className="gamoverbtns">
     <button onClick={handleGoTrivia} className="play-again">Play Again</button>
     <button onClick={handleGoHome} className="back-home">Back Home</button>
+    </div>
     </div>
     </div>)
 }
