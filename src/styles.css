@@ -76,22 +76,26 @@ body {
   top: 10;
   left: 0;
   margin: 0 auto;
-  display: flex;
+  display: center;
+  padding: 1rem 3rem;
   background-size: cover;
   justify-content: center;
   align-items: flex-start;
   background-repeat: no-repeat;
 }
 
+
+
 .home-title{
 background-color: rgba(255, 255, 255, 0.507);
+backdrop-filter: blur(1px);
 white-space: normal;
 color: rgb(255, 255, 255);
-font-size: 5em;
+font-size: 6em;
 font-family: 'DM Serif Display', serif;
 justify-content: space-around center;
 position: absolute;
-top: 50%;
+top: 30%;
 left: 50%;
 transform: translate(-50%, -50%);
 padding: 1em;
@@ -105,16 +109,18 @@ padding: 1em;
   justify-content: space-around center;
   padding: 1em;
   position: absolute;
-  top: 85%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .book-res-btn{
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.655);
   font-size: 20px;
   padding: 1em;
   position: absolute;
-  top: 100%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -386,20 +392,21 @@ input {
   position: absolute;
   display: center;
   /* min-height: 100%; */
-  background-image: url('https://i.pinimg.com/originals/6c/0d/f0/6c0df0b7e26c40e1a1de85e51106f940.jpg');
+  background-image: url('https://images.pling.com/img/00/00/62/66/55/1655280/ab6882d63d3388769d31005cc8c1743dea0a4c49558fa6d5c5cddc198893e4bafa96.jpg');
   background-size: fill;
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   padding: 1rem 3rem;
   color:black;
   text-transform: uppercase;
 }
 
 .wrap{
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
+  padding-top: 5ch;
 }
 
 .start-btn {
@@ -440,10 +447,8 @@ input {
 .quest-container{
   position: absolute;
   display: center;
-  /* min-height: 100%; */
-  background-image: url('https://i.pinimg.com/originals/6c/0d/f0/6c0df0b7e26c40e1a1de85e51106f940.jpg');
-
-  background-size: contain;
+  background-image: url('https://images.pling.com/img/00/00/62/66/55/1655280/ab6882d63d3388769d31005cc8c1743dea0a4c49558fa6d5c5cddc198893e4bafa96.jpg');
+  background-size: fill;
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -454,9 +459,21 @@ input {
   text-transform: uppercase;
 
 }
+.game-over {
+  position: absolute;
+  display: center;
+  background-image: url("https://iili.io/HRNSOBe.png");
+  background-size: fill;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  color:black;
+  text-transform: uppercase;
+}
 
-
-/* CSS */
 .entire-quiz{
   backdrop-filter: blur(2px);
   position: absolute;
@@ -521,11 +538,176 @@ input {
     background-position: 100%;
   }
 
-  .game-over{
-    font-size: xx-large;
-
-  }
   
+    
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 1.5em;
+  position: relative;
+  display: inline-block;
+  color: black;
+  text-transform: uppercase;
+  animation: waviy 2.5s infinite ease-in-out;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+img.dancing-guy {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 7%;
+  height: 7%;
+}
+.game-over__wrapper{
+ padding-top: 5ch;
+  
+}
+.triv-container-wrapper{
+  padding-top: 6ch;
+}
+.play-again{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+.play-again{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.play-again:before,
+.play-again:after{
+  position: absolute;
+  content: "PLAY AGAIN";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.play-again:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+.play-again:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+.play-again:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+.back-home{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+.back-home{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.back-home:before,
+.back-home:after{
+  position: absolute;
+  content: "RETURN HOME";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.back-home:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+.back-home:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+.back-home:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+.gamoverbtns{
+  padding-top: 2ch;
+}
+.home-subtitle{
+  backdrop-filter: blur(0.5px);
+}
+/*the blur effect looks almost like the opaque background*/
+
+.res-container {
+	height: auto;
+  padding-bottom: 5ch;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+.book-res-btn {
+	font-family: Helvetica;
+	letter-spacing: 0.4em;
+	font-weight: 600;
+	font-size: auto;
+	text-align: center;
+	color: #202125;
+  cursor: pointer;
+  max-width: 500px; 
+  width: 50%; 
+  outline: 3px solid;
+  outline-color: white;
+  outline-offset: 15px;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.book-res-btn:hover {
+	color: white (71, 126, 232, 0.7);
+  outline-color: white (71, 126, 232, 0);
+  outline-offset: 30px;
+}
+
+
 
 
 

@@ -20,9 +20,11 @@ const Trivia = ({ questions }) => {
       {isStartRendered ? (
         
         <div  className="triv-container">
+          <div className="triv-container-wrapper">
           <h1 className="triv-title">Welcome to National Park Trivia</h1>
           <div className="wrap">
             <button className="start-btn" onClick={handleClick}>Start Quiz</button>
+          </div>
           </div>
         </div>
       ) : null}
