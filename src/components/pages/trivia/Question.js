@@ -37,7 +37,7 @@ const Question = ({ questions, id }) => {
 
         setStillPlaying(false)
 
-       navigate("/gameover")
+       navigate("/gameover", {state: {points:points}})
       }
     }
 
@@ -49,7 +49,7 @@ const Question = ({ questions, id }) => {
         
     }
   };
-  const mappedAnswers = questions[currentQuestion].answerOptions.map(
+  const mappedAnswers = questions[currentQuestion].answerOptions.sort(() => 0.5 - Math.random()).map(
     (answerOption) => (
       <button className="answer-btn"
         onClick={() => handleAnswerClick(answerOption.isCorrect)}
