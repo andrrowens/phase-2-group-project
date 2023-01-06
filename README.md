@@ -36,7 +36,8 @@ The Navigation bar at the top of the page can bring you to 4 destinations where 
 ![Review GIF](https://media.giphy.com/media/PkLBT5I9YCkgAHvCZD/giphy.gif)
 
 * <b>Trivia</b> - Test your knowledge with our Nation Park Trivia Game!
- 
+
+![Trivia GIF](https://media.giphy.com/media/5w8mifaKNofMt5BFvV/giphy.gif)
 ![Trivia Homepage](public/images/triviahome.png)
 ![Trivia Question](public/images/triviaquestion.png)
 ![Gameover page](public/images/gameover.png)
