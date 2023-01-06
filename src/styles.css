@@ -440,10 +440,8 @@ input {
 .quest-container{
   position: absolute;
   display: center;
-  /* min-height: 100%; */
   background-image: url('https://images.pling.com/img/00/00/62/66/55/1655280/ab6882d63d3388769d31005cc8c1743dea0a4c49558fa6d5c5cddc198893e4bafa96.jpg');
-
-  background-size: contain;
+  background-size: fill;
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -453,6 +451,20 @@ input {
   color:black;
   text-transform: uppercase;
 
+}
+.game-over {
+  position: absolute;
+  display: center;
+  background-image: url("https://iili.io/HRNSOBe.png");
+  background-size: fill;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  color:black;
+  text-transform: uppercase;
 }
 
 

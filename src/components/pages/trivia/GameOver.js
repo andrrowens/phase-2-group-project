@@ -29,6 +29,9 @@ const GameOver = ({points})=>{
     </div>
     <button onClick={handleGoTrivia} className="play-again">Play Again</button>
     <button onClick={handleGoHome} className="back-home">Back Home</button>
+    <div className="hamster-container">
+      <img src="https://thumbs.gfycat.com/GoldenBogusHamster.webp" alt="game-over" />
+    </div>
     </div>)
 }
 export default GameOver
