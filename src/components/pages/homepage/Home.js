@@ -19,7 +19,7 @@ showForm(currentValue => !currentValue)
       <div className="home-form">
         <p className="home-subtitle">Explore the Beauty of America's National Parks</p>
       </div>
-      <div class="res-container">
+      <div className="res-container">
 	<p className="book-res-btn" onClick={handleShowForm}>Book a Reservation</p>
 </div>
       

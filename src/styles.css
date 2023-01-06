@@ -140,23 +140,29 @@ padding: 1em;
   width: 70%;
   height: 30vh;
   position: absolute;
-  bottom: -60px;
+  bottom: 20vh;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .res-selection{
+  border: solid 10px rgba(128, 128, 128, 0.326);
   width: 50%;
   font-size: 1em;
   height: 2.6em;
 }
 
 .res-selection-btn{
+  border: none;
   width: 50%;
   font-size: 15px;
   height: 2.25em;
   color: rgb(209, 255, 212);
-  background-color: rgb(44, 167, 44);
+  background-color: rgb(16, 177, 16);
+}
+
+.res-selection-btn:hover {
+  background-color: rgb(16, 177, 16);
 }
 
 .newsletter{
